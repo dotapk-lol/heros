@@ -1,10 +1,26 @@
 # heros
 
-MIT-licensed deterministic hero rules, editable balance parameters, state schemas and host contracts. The public default profile contains **22 heroes / 88 four-slot skills**. It matches the released game's selected rule implementations; the frontend, backend, game engine, networking and media remain private.
+MIT-licensed deterministic hero rules, editable balance parameters, state schemas and host contracts. The public default profile contains **22 heroes / 88 four-slot skills**. It matches the released game's selected rule implementations. The [frontend](https://github.com/dotapk-lol/frontend) and [backend](https://github.com/dotapk-lol/backend) are now public repositories with separate responsibilities and licensing boundaries.
 
 当前仅发布 22 英雄、88 技能槽。其余 24 个运行时英雄和 81 个目录英雄均未发布、暂停适配；游戏保持灰禁不可选。本仓库没有选人 UI，也不自动解锁未发布英雄。
 
 This is a source release on GitHub, not an npm-registry publication. Node.js >=22 and ESM are required; the serial examples/tests were exercised on Node.js 25.8.1.
+
+## Project architecture / 项目关系
+
+[dotapk.lol](https://dotapk.lol) uses three repositories:
+
+| Repository | Responsibility |
+| --- | --- |
+| **heros (this repository)** | Pure deterministic rules, parameters, state schemas and host contracts; Node examples/tests need no database or browser |
+| [frontend](https://github.com/dotapk-lol/frontend) | Cloudflare static client, UI/input/rendering/AI, browser combat world, rule host adapters and WebRTC/BC clients |
+| [backend](https://github.com/dotapk-lol/backend) | Go anonymous sessions, six-digit invitations, WebRTC signaling, result reconciliation and existing MySQL 8.4 statistics behind Nginx at api.dotapk.lol |
+
+The backend already uses the dedicated `dota_duel` schema on the existing AgentSquared host; no database switch or new database is required. Players need no account login. Frontend language preferences stay in localStorage. Go does not execute the skills, and this library does not supply a combat world or networking.
+
+Read each application's README for its local environment and [frontend integration](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.md) / [backend integration](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.md) for exact CORS, registry and build bindings. The current game uses `arena-heros22-v1` / `duel-heroes-127-v1` and 22 released heroes; 127 catalog identities do not unlock other heroes. The frontend's pinned review archive and composition differ from this root public88 assembly. Do not replace that archive merely because these repositories are public.
+
+[balance-data/README.md](balance-data/README.md) describes **internal manual** preparation of aggregate snapshots from existing MySQL and human review before commit. It contains no real statistics, export script, scheduled task or promised cadence. PVP `confirmed / peer_agreement` is separate from PVE/local/BC `recorded / client_reported`; aborted, disputed and abnormal games are excluded from win rates. These aggregate records do not automatically change rule parameters.
 
 ## Install and start
 
@@ -40,7 +56,7 @@ See [examples/balance-change.mjs](examples/balance-change.mjs) for a real source
 
 The original SDK's initializer is preserved separately at `@dotapk/heros/sdk`: it retains the fixed46 definition roster and its original three default implementations. The root entry assembles only the released88. Its internal definitions/resources retain the same46 identities because the SDK validates that fixed catalog; definitions do not make an unreleased hero playable.
 
-Public88 rulesHash: `bfca4c893786d98da8cc18d8c560a88e76fb9e5e79c1e71920bf78705a918d31`. This is a public assembly identity, distinct from the game's larger private composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
+Public88 rulesHash: `bfca4c893786d98da8cc18d8c560a88e76fb9e5e79c1e71920bf78705a918d31`. This is a public assembly identity, distinct from the game's larger frontend composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
 
 ## Released heroes
 
@@ -66,8 +82,22 @@ The [release profile](docs/released-profile.md) lists exact IDs and four ability
 
 `examples/training-lantern/` is a complete original teaching plugin with a finite recorder and exact replay. It uses the real SDK on an existing stable identity carrier; arbitrary new hero IDs are not implemented. It does not execute native hero mechanisms or model a production match. Its protection provider records a request without simulating immunity.
 
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| `release/` | Released22 allowlist, factory assembly and expected88 manifest |
+| `content/` | Numeric definitions/resources; fixed46 SDK identities remain internal definition carriers |
+| `contract/` | Registry, session, state/effect/schedule/value schemas and TypeScript contract |
+| `rules/` | Reviewed static implementations, parameters and generated source fingerprints |
+| `examples/` | Original finite host recorder, plugin wiring and balance-change example |
+| `test/`, `scripts/` | Focused metadata/example checks and serial runners |
+| `docs/`, `balance-data/` | Developer contracts, current limits and manual aggregate-data policy |
+
+Change numeric definitions or captured factory parameters only through validated existing templates and stable IDs; register reviewed static factories, seal the registry, then deliver events/receipts through your synchronous host. See [parameters](docs/balance-identity.md), [plugins](docs/plugins.md), [host adapter](docs/host-adapter.md) and the runnable examples. Arbitrary custom IDs and external runtime plugins are not implemented, and paused heroes are not enabled by documentation edits. Use the [focused serial tests](docs/testing-replay.md) for relevant behavior; prose-only updates can use link/path checks and `git diff --check` without rebuilding fingerprints.
+
 ## Scope and license
 
-Included: original SDK, pure rules, numeric definitions/parameters, canonical state schemas, original examples, focused public tests and developer documentation. Excluded: private engine/host adapters, frontend/backend, UI, AI, physics loop, network, database, deployments, credentials, private history, real world snapshots and all artwork/audio/music/fonts/logos.
+Included: original SDK, pure rules, numeric definitions/parameters, canonical state schemas, original examples, focused public tests and developer documentation. Excluded from this package: application engine/host adapters, frontend/backend, UI, AI, physics loop, network, database, deployments, credentials, historical private working records, real world snapshots and all artwork/audio/music/fonts/logos. Application source lives in the separate public repositories; package publication does not grant those repositories MIT.
 
-Original contributions are under [MIT](LICENSE); keep [NOTICE](NOTICE). MIT does not license Valve names, source material or trademarks. Numeric records are a project snapshot with arena adaptations, not a promise of current official Dota balance or complete Dota mechanics. No Valve descriptions or media are redistributed. See [SECURITY.md](SECURITY.md).
+Original contributions are under [MIT](LICENSE); keep [NOTICE](NOTICE). MIT does not license Valve names, source material, trademarks, artwork or music. The frontend/backend currently have no LICENSE file; do not assume this package license covers them or redistribute third-party media under MIT. Numeric records are a project snapshot with arena adaptations, not a promise of current official Dota balance or complete Dota mechanics. No Valve descriptions or media are redistributed. See [SECURITY.md](SECURITY.md).

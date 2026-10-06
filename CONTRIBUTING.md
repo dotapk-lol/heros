@@ -6,11 +6,11 @@ Contribute original deterministic behavior, documentation or focused tests. Star
 
 Select one existing stable ID/slot and record the expected revision. Preserve identity and admission family. Capture validated immutable parameters in a static factory, declare exact source identity, minimal capabilities, named hooks and canonical state. Use provider requests/actual receipts; keep world transactions, clocks and accepted reference authentication in the host. Unsupported provider semantics stay gated until separately accepted.
 
-Do not copy private Engine/game adapters, credentials, deployment configuration, media or copyrighted descriptions. Explain numeric coefficient provenance and arena adaptations without claiming current official balance. MIT covers your original contribution, not third-party material. Preserve LICENSE and NOTICE.
+Keep contributions within the rule/package boundary; application Engine/game adapters belong in the separate frontend repository. Do not copy credentials, deployment secrets, media or copyrighted descriptions. Explain numeric coefficient provenance and arena adaptations without claiming current official balance. MIT covers your original contribution, not third-party material. Preserve LICENSE and NOTICE.
 
 Add meaningful focused tests: actual changed requests/receipts, both participants when relevant, invalid configuration, lifecycle cleanup, disabled passive behavior, identity mismatch and atomic state restore. Generate fingerprints in the source checkout and verify the exact final installed files. A source-generated digest is not proof of untrusted closure behavior or native parity.
 
-For documentation changes run the serial commands in [testing-replay.md](docs/testing-replay.md). Test one changed case at a time; a blanket full-suite pass count is not required evidence for a prose/example edit. Do not treat these detached tests as browser or native-host integration results.
+For prose-only documentation changes check links, paths and `git diff --check`; no fingerprint rebuild is needed. If an example or rule boundary changes, run the relevant serial commands in [testing-replay.md](docs/testing-replay.md). Test one changed case at a time; a blanket full-suite pass count is not required evidence for a prose/example edit. Do not treat these detached tests as browser or native-host integration results.
 
 ## PR checklist
 
@@ -26,3 +26,7 @@ For documentation changes run the serial commands in [testing-replay.md](docs/te
 - [ ] README/docs/example links and any public packaging changes are reviewed; version and exact assembly are recorded; paused heroes are not enabled by a status-only edit.
 
 A PR adding a shared contract, a new identity policy or default registration needs a separate explicit design review and host compatibility tests. Keep the patch small, state unsupported cases and preserve old artifact fingerprints for reviewers.
+
+## Manual balance snapshots
+
+Follow [balance-data/README.md](balance-data/README.md). Internal maintainers manually prepare aggregates from existing MySQL and review them before commit; a contribution must state exact version/window/cohort/denominator and anonymization choices. Do not add automated synchronization, export tooling, real-data examples, raw reports or traceable participant records under this documentation task. Snapshot approval does not authorize parameter changes or paused-hero activation.
