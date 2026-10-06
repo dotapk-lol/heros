@@ -1,0 +1,10 @@
+DOTA HERO RULE REVIEW PACKAGE
+
+Original rule code, integration interfaces, examples and accompanying documentation:
+Copyright (c) 2026 dotapk-lol contributors. Distributed under the MIT License in LICENSE.
+
+Dota, Dota 2, hero and ability names are associated with Valve Corporation. This is an independent fan adaptation, not an official Valve product or endorsement. Attribution does not imply permission or a license grant from Valve.
+
+The numeric catalog is a preserved project snapshot of official hero/ability data and arena-specific adaptations. Official source: https://www.dota2.com/heroes ; the original data source uses https://www.dota2.com/datafeed/herodata?language=english&hero_id=<Valve hero ID>. Each definition records valveHeroId separately from the local registryNumericId. Snapshot provenance predates this package assembly; this package does not assert current patch accuracy or invent a universal snapshot date.
+
+Official coefficients are in official.params / official.semantic. mvp and combat resource fields describe the project's 2D arena adaptation and must not be presented as unchanged official Dota mechanics. Labels are included to identify those numeric records. The package does not redistribute official descriptive articles, hero artwork, soundtracks, sound effects, fonts, logos or other media. MIT applies to original contributed work; it does not relicense Valve names or source material. The private host and website are separate deliverables.

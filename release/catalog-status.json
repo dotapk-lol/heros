@@ -1,0 +1,1145 @@
+[
+  {
+    "registryNumericId": 0,
+    "id": "juggernaut",
+    "valveHeroId": 8,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 1,
+    "id": "crystal_maiden",
+    "valveHeroId": 5,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 2,
+    "id": "pudge",
+    "valveHeroId": 14,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 3,
+    "id": "axe",
+    "valveHeroId": 2,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 4,
+    "id": "sniper",
+    "valveHeroId": 35,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 5,
+    "id": "anti_mage",
+    "valveHeroId": 1,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 6,
+    "id": "phantom_assassin",
+    "valveHeroId": 44,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 7,
+    "id": "drow_ranger",
+    "valveHeroId": 6,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 8,
+    "id": "lina",
+    "valveHeroId": 25,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 9,
+    "id": "lion",
+    "valveHeroId": 26,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 10,
+    "id": "earthshaker",
+    "valveHeroId": 7,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 11,
+    "id": "mirana",
+    "valveHeroId": 9,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 12,
+    "id": "sven",
+    "valveHeroId": 18,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 13,
+    "id": "zeus",
+    "valveHeroId": 22,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 14,
+    "id": "windranger",
+    "valveHeroId": 21,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 15,
+    "id": "shadow_fiend",
+    "valveHeroId": 11,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 16,
+    "id": "storm_spirit",
+    "valveHeroId": 17,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 17,
+    "id": "queen_of_pain",
+    "valveHeroId": 39,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 18,
+    "id": "witch_doctor",
+    "valveHeroId": 30,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 19,
+    "id": "tidehunter",
+    "valveHeroId": 29,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 20,
+    "id": "valve_3",
+    "valveHeroId": 3,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 21,
+    "id": "valve_4",
+    "valveHeroId": 4,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 22,
+    "id": "valve_10",
+    "valveHeroId": 10,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 23,
+    "id": "valve_12",
+    "valveHeroId": 12,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 24,
+    "id": "valve_13",
+    "valveHeroId": 13,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 25,
+    "id": "valve_15",
+    "valveHeroId": 15,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 26,
+    "id": "valve_16",
+    "valveHeroId": 16,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 27,
+    "id": "valve_19",
+    "valveHeroId": 19,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 28,
+    "id": "valve_20",
+    "valveHeroId": 20,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 29,
+    "id": "valve_23",
+    "valveHeroId": 23,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 30,
+    "id": "valve_27",
+    "valveHeroId": 27,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 31,
+    "id": "valve_28",
+    "valveHeroId": 28,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 32,
+    "id": "valve_31",
+    "valveHeroId": 31,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 33,
+    "id": "valve_32",
+    "valveHeroId": 32,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 34,
+    "id": "valve_33",
+    "valveHeroId": 33,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 35,
+    "id": "valve_34",
+    "valveHeroId": 34,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 36,
+    "id": "valve_36",
+    "valveHeroId": 36,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 37,
+    "id": "valve_37",
+    "valveHeroId": 37,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 38,
+    "id": "valve_38",
+    "valveHeroId": 38,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 39,
+    "id": "valve_40",
+    "valveHeroId": 40,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 40,
+    "id": "valve_41",
+    "valveHeroId": 41,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 41,
+    "id": "valve_42",
+    "valveHeroId": 42,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 42,
+    "id": "valve_43",
+    "valveHeroId": 43,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 43,
+    "id": "valve_45",
+    "valveHeroId": 45,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 44,
+    "id": "valve_46",
+    "valveHeroId": 46,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 45,
+    "id": "valve_47",
+    "valveHeroId": 47,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 46,
+    "id": "valve_48",
+    "valveHeroId": 48,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 47,
+    "id": "valve_49",
+    "valveHeroId": 49,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 3,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 48,
+    "id": "valve_50",
+    "valveHeroId": 50,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 49,
+    "id": "valve_51",
+    "valveHeroId": 51,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 50,
+    "id": "valve_52",
+    "valveHeroId": 52,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 51,
+    "id": "valve_53",
+    "valveHeroId": 53,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 52,
+    "id": "valve_54",
+    "valveHeroId": 54,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 53,
+    "id": "valve_55",
+    "valveHeroId": 55,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 54,
+    "id": "valve_56",
+    "valveHeroId": 56,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 55,
+    "id": "valve_57",
+    "valveHeroId": 57,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 56,
+    "id": "valve_58",
+    "valveHeroId": 58,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 57,
+    "id": "valve_59",
+    "valveHeroId": 59,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 58,
+    "id": "valve_60",
+    "valveHeroId": 60,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 59,
+    "id": "valve_61",
+    "valveHeroId": 61,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 60,
+    "id": "valve_62",
+    "valveHeroId": 62,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 61,
+    "id": "valve_63",
+    "valveHeroId": 63,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 62,
+    "id": "valve_64",
+    "valveHeroId": 64,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 63,
+    "id": "valve_65",
+    "valveHeroId": 65,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 64,
+    "id": "valve_66",
+    "valveHeroId": 66,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 65,
+    "id": "valve_67",
+    "valveHeroId": 67,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 66,
+    "id": "valve_68",
+    "valveHeroId": 68,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 67,
+    "id": "valve_69",
+    "valveHeroId": 69,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 68,
+    "id": "valve_70",
+    "valveHeroId": 70,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 69,
+    "id": "valve_71",
+    "valveHeroId": 71,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 70,
+    "id": "valve_72",
+    "valveHeroId": 72,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 71,
+    "id": "valve_73",
+    "valveHeroId": 73,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 72,
+    "id": "valve_74",
+    "valveHeroId": 74,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 73,
+    "id": "valve_75",
+    "valveHeroId": 75,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 74,
+    "id": "valve_76",
+    "valveHeroId": 76,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 75,
+    "id": "valve_77",
+    "valveHeroId": 77,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 76,
+    "id": "valve_78",
+    "valveHeroId": 78,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 77,
+    "id": "valve_79",
+    "valveHeroId": 79,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 78,
+    "id": "valve_80",
+    "valveHeroId": 80,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 79,
+    "id": "valve_81",
+    "valveHeroId": 81,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 80,
+    "id": "valve_82",
+    "valveHeroId": 82,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 81,
+    "id": "valve_83",
+    "valveHeroId": 83,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 82,
+    "id": "valve_84",
+    "valveHeroId": 84,
+    "status": "released",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
+  },
+  {
+    "registryNumericId": 83,
+    "id": "valve_85",
+    "valveHeroId": 85,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 84,
+    "id": "valve_86",
+    "valveHeroId": 86,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 85,
+    "id": "valve_87",
+    "valveHeroId": 87,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 86,
+    "id": "valve_88",
+    "valveHeroId": 88,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 87,
+    "id": "valve_89",
+    "valveHeroId": 89,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 88,
+    "id": "valve_90",
+    "valveHeroId": 90,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 89,
+    "id": "valve_91",
+    "valveHeroId": 91,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 90,
+    "id": "valve_92",
+    "valveHeroId": 92,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 91,
+    "id": "valve_93",
+    "valveHeroId": 93,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 92,
+    "id": "valve_94",
+    "valveHeroId": 94,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 93,
+    "id": "valve_95",
+    "valveHeroId": 95,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 94,
+    "id": "valve_96",
+    "valveHeroId": 96,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 2,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 95,
+    "id": "valve_97",
+    "valveHeroId": 97,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 96,
+    "id": "valve_98",
+    "valveHeroId": 98,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 97,
+    "id": "valve_99",
+    "valveHeroId": 99,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 98,
+    "id": "valve_100",
+    "valveHeroId": 100,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 99,
+    "id": "valve_101",
+    "valveHeroId": 101,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 100,
+    "id": "valve_102",
+    "valveHeroId": 102,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 101,
+    "id": "valve_103",
+    "valveHeroId": 103,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 102,
+    "id": "valve_104",
+    "valveHeroId": 104,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 103,
+    "id": "valve_105",
+    "valveHeroId": 105,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 104,
+    "id": "valve_106",
+    "valveHeroId": 106,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 105,
+    "id": "valve_107",
+    "valveHeroId": 107,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 106,
+    "id": "valve_108",
+    "valveHeroId": 108,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 1,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 107,
+    "id": "valve_109",
+    "valveHeroId": 109,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 108,
+    "id": "valve_110",
+    "valveHeroId": 110,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 109,
+    "id": "valve_111",
+    "valveHeroId": 111,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 110,
+    "id": "valve_112",
+    "valveHeroId": 112,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 111,
+    "id": "valve_113",
+    "valveHeroId": 113,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 112,
+    "id": "valve_114",
+    "valveHeroId": 114,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 113,
+    "id": "valve_119",
+    "valveHeroId": 119,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 114,
+    "id": "valve_120",
+    "valveHeroId": 120,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 115,
+    "id": "valve_121",
+    "valveHeroId": 121,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 116,
+    "id": "valve_123",
+    "valveHeroId": 123,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 117,
+    "id": "valve_126",
+    "valveHeroId": 126,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 118,
+    "id": "valve_128",
+    "valveHeroId": 128,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 119,
+    "id": "valve_129",
+    "valveHeroId": 129,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 120,
+    "id": "valve_131",
+    "valveHeroId": 131,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 121,
+    "id": "valve_135",
+    "valveHeroId": 135,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 122,
+    "id": "valve_136",
+    "valveHeroId": 136,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 123,
+    "id": "valve_137",
+    "valveHeroId": 137,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 124,
+    "id": "valve_138",
+    "valveHeroId": 138,
+    "status": "unreleased-paused",
+    "scope": "runtime",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 125,
+    "id": "valve_145",
+    "valveHeroId": 145,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  },
+  {
+    "registryNumericId": 126,
+    "id": "valve_155",
+    "valveHeroId": 155,
+    "status": "unreleased-paused",
+    "scope": "catalog-only",
+    "acceptedSlotsInBaseline": 0,
+    "selectable": false
+  }
+]
