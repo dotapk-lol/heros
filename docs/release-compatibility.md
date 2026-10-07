@@ -1,3 +1,5 @@
+[English](release-compatibility.md) | [简体中文](release-compatibility.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Release compatibility and remaining limits
 
 Public source version0.1.0 targets ABI heros-effects-2. It is derived from the exact reviewed public input0.1.0-review.10-rupture-order.1, archive SHA256 `2885ade8d7eeb06a03045f41ac2907e17d5e753f0b881091515a3afc9005a391`. Later Siphon or paused hero adaptations are not integrated.

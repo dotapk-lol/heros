@@ -1,3 +1,5 @@
+[English](registry.md) | [简体中文](registry.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Stable IDs and four-slot registration
 
 Each runtime definition has string id, registryNumericId, separate valveHeroId and exactly four ordered abilities. Indices are0..3; S1 means index0. Numeric hero IDs are not array positions or actor IDs. ActorId remains0 or1.
@@ -32,4 +34,4 @@ There is no registerHero/addHero/unregister/registerPluginUrl API. The construct
 
 ## Published status
 
-The root profile selects only the released22 IDs and88 manifest rows. The remaining24 runtime heroes and81 catalog-only entries are unreleased and paused. There is no public184 candidate assembly. Low-level source, a valid definition, a factory's existence or a manually changed registry is not proof of host support or authorization to enable a paused hero. The released game separately enforces its selector/CPU/network/snapshot whitelist; this library contains none of those private systems.
+The root profile selects only the released22 IDs and88 manifest rows. The remaining24 runtime heroes and81 catalog-only entries are unreleased and paused. There is no public184 candidate assembly. Low-level source, a valid definition, a factory's existence or a manually changed registry is not proof of host support or authorization to enable a paused hero. The released game separately enforces its selector/CPU/network/snapshot whitelist; this library contains none of those application systems.

@@ -1,3 +1,5 @@
+[English](testing-replay.md) | [简体中文](testing-replay.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Focused tests and deterministic replay
 
 Test the changed rule or example at its actual public session boundary. Distinguish metadata checks, detached command/receipt checks, native-host integration and browser evidence. None substitutes for the others. The focused tests exercise the original example and public assembly/API boundaries; it does not rerun catalog mechanisms or certify all 184 slots.
@@ -36,3 +38,5 @@ The example checkpoints `session.snapshot()` and the recorder's `checkpoint()` s
 ## Artifact checks
 
 Regenerate source fingerprints before a source-integrated plugin test, then freeze the final artifact. Validate file inventory, no private paths/assets/credentials, actual installed bytes and replayed bytes. Installing a package alone does not prove npm's file whitelist included the new docs/examples. The explicit public file whitelist includes the docs, original examples and focused tests. See [compatibility](release-compatibility.md).
+
+For prose-only edits use `python3 scripts/check-docs.py` and `git diff --check`; do not rebuild fingerprints unless source/package inventory changes.

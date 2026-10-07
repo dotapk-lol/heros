@@ -1,3 +1,5 @@
+[English](effects.md) | [简体中文](effects.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Effect requests and provider semantics
 
 The contract describes requests and receipts, not a replacement engine. Refer to [types.ts](../contract/types.ts) for exact field types. Only ports declared in `requires` appear in a skill's context. All source/target/owner/actor references below are actor IDs 0 or 1.

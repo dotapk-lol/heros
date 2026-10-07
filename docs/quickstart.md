@@ -1,3 +1,5 @@
+[English](quickstart.md) | [简体中文](quickstart.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Quick start and exports
 
 Node.js >=22 with ES modules is declared; current validation used25.8.1. The pure example needs no services or third-party runtime dependency. Browser/native-host compatibility needs its own integration evidence.

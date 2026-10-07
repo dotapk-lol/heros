@@ -1,3 +1,5 @@
+[English](balance-identity.md) | [简体中文](balance-identity.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Balance parameters, versions and compatibility identities
 
 There are two supported balance surfaces: validated numeric recipe fields in an existing hero definition, and captured factory execution parameters. Neither is a global mutable coefficient map.

@@ -1,3 +1,5 @@
+[English](unreleased.md) | [简体中文](unreleased.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Unreleased heroes: paused
 
 The public default and the released game support only the22 profile. The remaining24 runtime identities have incomplete four-slot release coverage; another81 identities are catalog-only and have no published four-slot runtime. All105 are disabled for the released game. This repository supplies status information, not UI, selection or network gates. No further adaptation was performed for this release.

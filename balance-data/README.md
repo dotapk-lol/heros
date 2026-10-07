@@ -1,53 +1,55 @@
-# 平衡数据：内部手动汇总与审阅
+[English](README.md) | [简体中文](README.zh-CN.md) | [Website / 官网](https://dotapk.lol)
 
-此目录用于维护者将**现有 MySQL 的汇总快照**人工整理、人工审阅后提交为平衡性研究记录。后端已经使用 MySQL 8.4 与独立 `dota_duel` schema，复用现有服务；无需更换数据库或新建数据库。
+# Balance data: internal manual aggregation and review
 
-当前仅说明流程和口径，没有导出真实数据、生成示例统计、导出脚本、定时任务或自动同步。何时整理由内部人员决定，不承诺同步频率。玩家仍无需登录，匿名会话标识也不是可公开的数据。快照用于观察，不会自动调整参数、替换游戏规则或恢复未发布英雄。当前发布范围保持 **22 英雄 / 88 技能槽**。
+This directory documents how maintainers **manually prepare aggregate snapshots from existing MySQL**, review them and commit approved summaries for balance research. Backend already uses MySQL8.4 and dedicated `dota_duel` on existing services; no database switch or new database is needed.
 
-项目代码与口径来源：[backend](https://github.com/dotapk-lol/backend)、[frontend](https://github.com/dotapk-lol/frontend)、[参数与版本](../docs/balance-identity.md)。后台已有 `duel_hero_balance_v2/v3` 与 `duel_data_quality_v2/v3` views；它们是内部分析起点，不是可以直接复制公开的成品。没有公开未认证的平衡统计或原始战绩下载 API。
+There is currently no real-data snapshot, fabricated example statistics, export script, scheduled task or automatic sync. Internal maintainers decide when to prepare data; no cadence is promised. Players remain anonymous/no-login, and session identifiers are not public data. Snapshots are observations, not automatic parameter changes, package replacement or paused-hero activation; release remains **22 heroes/88 slots**.
 
-## 内部手动流程
+Sources: [backend](https://github.com/dotapk-lol/backend), [frontend](https://github.com/dotapk-lol/frontend), [parameter/version identity](../docs/balance-identity.md). Existing `duel_hero_balance_v2/v3` and `duel_data_quality_v2/v3` views are internal starting points, not publishable SELECT* output. No unauthenticated public statistics/raw-record download API exists.
 
-1. 维护者通过已有、获授权的 MySQL 只读分析会话确定版本、时间窗口与统计层级，不修改生产数据或服务配置。
-2. 人工核对完成状态、报告可信度、重复/测试/异常局、身份映射与数据质量；明确过滤规则和排除数量。
-3. 整理足够粗粒度的英雄及对阵汇总。按下述 cohort 分开，核对比赛数、appearance、胜负和分母，避免 join fanout 或两座位重复计数。
-4. 执行隐私与小样本检查。抑制、合并或不发布能关联到个体/单局的细分记录；不通过相邻窗口差分暴露少量新增比赛。
-5. 另一位维护者人工审阅口径、计算、身份/版本与公开范围，随后通过普通文档/数据 PR 提交汇总文件。审阅记录只描述方法与结论，不附原始查询输出、凭据或玩家资料。
+## Manual workflow
 
-## 每份未来快照建议说明
+1. Use an existing authorized read-only MySQL analysis session to choose exact versions, time window and grain; do not modify production data/configuration.
+2. Review completion/trust, duplicates, known tests/anomalies, identity mapping and quality; document exclusions and coarse counts.
+3. Prepare sufficiently coarse hero/matchup aggregates, keeping the cohorts below separate. Reconcile matches, appearances, wins/losses and denominator; avoid join fanout or double-counting seats.
+4. Review privacy/small samples. Suppress, combine or withhold traceable individual/single-game groups; avoid adjacent-window differences that expose only a few new games.
+5. Another maintainer reviews definitions, calculations, identities/versions and public scope, then submits summaries through an ordinary data/docs PR. Review notes describe method/conclusion, never raw queries/credentials/player details.
 
-这些是建议字段/口径，不是已存在的统计或新的数据库 schema。可使用审阅后的 Markdown/CSV/JSON 汇总，格式需自带口径说明；当前目录没有真实快照。
+## Suggested metadata for a future snapshot
 
-| 项目 | 需要说明的内容 |
+These are suggested definitions, not actual statistics or a new database schema. An approved Markdown/CSV/JSON aggregate must include its own methodology; no real snapshot is present now.
+
+| Item | Required explanation |
 | --- | --- |
-| 快照身份 | 独立快照版本、整理/审阅日期、方法版本；修正旧快照要注明原因，不悄悄覆盖 |
-| 数据窗口 | UTC 开始/结束、例如 `[start, end)`；选择 started_at 或 ended_at 并说明，避免重叠/跨窗口双计 |
-| 游戏身份 | 精确 game_version/build、registry_version、roster_id；适用 rulesHash/ABI/参数 revision 需从对应发布记录核实，不能从数据库臆造 |
-| 英雄身份 | 稳定 registryNumericId 与可读名称，必要时注明 Valve ID 映射；不用列表下标替代 |
-| cohort | mode、transport、status、trust；PVE 另注明 AI 难度，人类 seat；不混合版本或历史名单 |
-| 英雄汇总 | 合格 appearance 数、胜场/负场、胜率分母；同时说明唯一比赛计数方式 |
-| 对阵汇总 | hero 与 opponent_hero 的有向口径、座位是否合并、对阵比赛/appearance 数、胜率分母 |
-| 质量与限制 | 排除规则和粗粒度数量、缺失/未映射比例、窗口覆盖、小样本抑制规则、人工复核结论与偏差 |
+| Snapshot identity | Independent version, preparation/review date and method version; corrections explain reasons rather than silently overwriting |
+| Window | UTC start/end, e.g. `[start, end)`; specify started_at vs ended_at and avoid overlapping/double-counted games |
+| Game identity | Exact game_version/build, registry_version, roster_id; rulesHash/ABI/parameter revision verified from release provenance, never invented from SQL |
+| Hero identity | Stable registryNumericId/readable name and optional Valve mapping, never array position |
+| Cohort | mode, transport, status, trust; PVE adds AI difficulty/human seat; do not merge versions/historical rosters |
+| Hero summary | Eligible appearances, wins/losses and win-rate denominator; explain unique-match counting separately |
+| Matchup summary | Directed hero/opponent_hero, whether seats are combined, match/appearance count and denominator |
+| Quality/limits | Coarse exclusion counts/rules, missing/unmapped rates, coverage/small-sample policy, manual review and bias |
 
-胜率建议定义为该 cohort 内合格胜场 / 合格 appearance；零分母不计算。后端 v3 view 的 `appearances` 是座位视角：PVP 一局可能贡献两个英雄 appearance，镜像对阵的同一英雄可能出现两次；不能把它标作唯一比赛数。PVE view 只纳入人类 seat 0。对阵 A→B 与 B→A 是有向记录，合并前要明确处理座位与镜像，不双计。三局两胜的回合胜数与整场胜数不同，不混用。view 的四位小数 win_rate 是内部预聚合结果；跨组汇总应根据总胜场/总分母重新计算，不简单平均各行胜率。
+Suggested win rate: eligible wins / eligible appearances within that cohort; undefined for denominator0. In v3, appearances are seat views: PVP can contribute two per match and mirror heroes can appear twice, so do not label them unique matches. PVE counts human seat0. A→B/B→A are directed; specify seat/mirror handling before combining. Round wins differ from full first-to2 match wins. View win_rate is rounded to four decimals; recompute aggregate rate from total wins/denominator, not an average of row percentages.
 
-不要把未经审阅的 `SELECT *` 作为公开快照。质量 view 提供检查指标，但不会自动排除所有坏数据；时间窗和过滤也须在内部人工确定。来源缺少 rulesHash、样本足够性或可比性证据时，明确未知，不填假值。
+Do not publish unreviewed SELECT* output. Quality views expose indicators but do not automatically filter every anomaly; define windows/exclusions manually. Mark missing rulesHash, adequacy or comparability evidence unknown, not fabricated.
 
-## 必须区分的结果与可信度
+## Results and trust must remain separated
 
-| 组别 | 合格完成状态 / 可信度 | 分析边界 |
+| Group | Eligible completion / trust | Boundary |
 | --- | --- | --- |
-| 网络 PVP / WebRTC | `confirmed / peer_agreement` | 双方上报一致；不是服务器模拟、反作弊证明或真实技术水平认证 |
-| PVE | `recorded / client_reported` | 客户端单报，人类 seat 0；按 AI 难度单列 |
-| 同屏 PVP / local | `recorded / client_reported` | 单个真实报告者，比赛内部两个座位；不与 WebRTC 双报组混合 |
-| BroadcastChannel PVP | `recorded / client_reported` | 同浏览器跨标签，房主上报；不能代表跨设备网络对战 |
+| Network PVP / WebRTC | confirmed / peer_agreement | Two reports agree; not server simulation, anti-cheat proof or skill certification |
+| PVE | recorded / client_reported | One client, human seat0; separate AI difficulty |
+| Same-screen PVP / local | recorded / client_reported | One real reporter/two match-local seats; separate from WebRTC |
+| BroadcastChannel PVP | recorded / client_reported | Same-browser tabs, host reports; not cross-device networking |
 
-`aborted`、`disputed`、pending/未完成、无效时间顺序、未映射/不在对应 roster 的英雄、赢家异常、可信度不符或缺少必要确认、重复数据、已知测试/异常局必须排除出胜率。排除原因可做足够粗粒度的质量汇总，不能公开异常局原始详情。未分类或可信度未知的数据单独审查，不自动升级为 peer_agreement。
+Exclude aborted, disputed, pending/incomplete, invalid time order, unmapped/out-of-roster participants, invalid winner/trust/missing confirmation, duplicates and known test/anomalous games from win rates. Exclusions may have coarse quality counts, never raw details. Unclassified/unknown-trust data needs separate review, never automatic peer_agreement promotion.
 
-## 公开范围与隐私
+## Public scope and privacy
 
-只发布审阅后的汇总；**不公开** playerId/匿名参与者 ID、session/token、IP、房间码或房间/比赛标识、原始报告/submissions、SDP、逐局事件、精确单局时间、可追踪序列、细粒度可关联数据、数据库凭据或生产备份。匿名不等于去标识化；仅去掉姓名仍可能重识别玩家。
+Publish only reviewed aggregates. **Do not publish** player/anonymous participant IDs, session/token, IP, invitation or room/match IDs, raw submissions/reports, SDP, per-game events, exact individual timestamps, traceable sequences, fine-grained linkable data, credentials or production backups. Anonymous is not de-identified; removing a name alone can still reidentify people.
 
-内部审阅时自行选择并记录最小样本与时间/维度粗化策略；这里不假造固定安全阈值。即使没有标识，极小对阵群、细分窗口或差分快照也可能泄露单局，必要时合并/抑制/不发布。公开 PR、提交信息和附件同样遵守这些要求。
+Internally choose/document minimum sample/time/dimension coarsening policy; no invented universal safe threshold is given here. Tiny matchups, fine windows or differencing may expose a game even without an ID; combine/suppress/withhold as needed. PRs, commits and attachments obey the same scope.
 
-快照不代表官方 Dota 平衡、完整机制、随机抽样或因果结论。英雄选择、参与者构成、AI、版本和单报偏差会影响胜率，跨 cohort 不直接排名。代码 MIT 不授权 Valve 名称、商标、图像或音乐，也不授权公开个人数据；此目录不收录第三方媒体。
+Snapshots are not official Dota balance, full mechanisms, random samples or causal conclusions. Selection, participant mix, AI, versions and single-report bias affect rates; do not directly rank across cohorts. Code MIT does not license Valve names/trademarks/images/music or personal-data publication. This directory contains no third-party media.

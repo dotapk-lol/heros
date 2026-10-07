@@ -1,3 +1,5 @@
+[English](CONTRIBUTING.md) | [简体中文](CONTRIBUTING.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Contributing
 
 Contribute original deterministic behavior, documentation or focused tests. Start with the [developer guide](README.md) and the actual [contract](contract/types.ts). The current registry is a fixed 46-hero/four-slot roster; a new hero identity or shared capability is an API proposal, not a routine plugin edit.
@@ -30,3 +32,7 @@ A PR adding a shared contract, a new identity policy or default registration nee
 ## Manual balance snapshots
 
 Follow [balance-data/README.md](balance-data/README.md). Internal maintainers manually prepare aggregates from existing MySQL and review them before commit; a contribution must state exact version/window/cohort/denominator and anonymization choices. Do not add automated synchronization, export tooling, real-data examples, raw reports or traceable participant records under this documentation task. Snapshot approval does not authorize parameter changes or paused-hero activation.
+
+## Bilingual maintenance
+
+Keep every retained Markdown guide paired: English name.md and Chinese name.zh-CN.md, with language links and https://dotapk.lol first. Update both versions and package.json's files whitelist when adding packaged guides. Do not duplicate machine schemas/data or translate the standard English LICENSE as a legal grant. Use `python3 scripts/check-docs.py` and `git diff --check`; exclude local reports, matrices and credentials from commits. Application source is public in separate repositories; package boundaries and paused status remain unchanged.

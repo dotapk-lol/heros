@@ -1,10 +1,10 @@
 [English](released-profile.md) | [简体中文](released-profile.zh-CN.md) | [Website / 官网](https://dotapk.lol)
 
-# Released22 profile
+# 已发布22 profile
 
-Source version0.1.0; exactly22 stable IDs with all four slots registered. Each row lists the existing public ability IDs in index0..3 order. Numeric parameters remain in content/heroes.json and factories capture validated immutable configuration.
+source0.1.0恰22稳定ID、每位四槽注册。下表按index0..3列既有公共ability ID，参数留content/heroes.json，factory捕获校验不可变配置。
 
-| ID | Hero | Four ability IDs |
+| ID | 英雄身份 | 四个ability ID |
 | --- | --- | --- |
 | 1 | crystal_maiden | `crystal_maiden_nova`<br>`crystal_maiden_frostbite`<br>`crystal_maiden_aura`<br>`crystal_maiden_freezing_field` |
 | 3 | axe | `axe_call`<br>`axe_hunger`<br>`axe_helix`<br>`axe_culling` |
@@ -29,6 +29,7 @@ Source version0.1.0; exactly22 stable IDs with all four slots registered. Each r
 | 81 | valve_83 | `treant_natures_grasp`<br>`treant_leech_seed`<br>`treant_living_armor`<br>`treant_overgrowth` |
 | 82 | valve_84 | `ogre_magi_fireblast`<br>`ogre_magi_ignite`<br>`ogre_magi_bloodlust`<br>`ogre_magi_multicast` |
 
-This is the released subset of the existing two-dimensional arena adaptation, not complete official Dota mechanics. Default registration does not implement a game world. Legacy rules may emit named owned JSON intents and require provider-authenticated public event/capability facts; hosts must implement and validate the exact source conventions before execution. Setting a capability label is not native acceptance. Generic typed ports and owned event/result programs coexist; see plugins.md and host-adapter.md.
 
-Slardar31:2 uses the accepted Bash rule, not an automatic Seaborn/water upgrade. Unpublished source helpers or source-profile options are not an enabled feature. All paused heroes are listed in unreleased.md.
+这是现有二维竞技场已发子集，不是完整官方Dota机制；默认注册不实现世界。legacy规则可发命名owned JSON意图、需要provider认证公共event/capability事实，host执行前实现/验证精确源约定。capability label不等于native验收，通用typed port与owned event/result程序共存，见[插件](plugins.zh-CN.md)/[host](host-adapter.zh-CN.md)。
+
+Slardar31:2为已接受Bash，不自动升级Seaborn/水机制；未发helper/source option不是启用功能。暂停英雄见[未发布](unreleased.zh-CN.md)。

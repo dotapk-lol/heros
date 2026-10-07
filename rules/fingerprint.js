@@ -18,7 +18,7 @@ export const sourceManifest={
   "examples/training-lantern/plugin.mjs": "15ed3acb4fc79412a6dfc131b673b33b9a92553d77beba7a1d82d52253e8700e",
   "examples/training-lantern/run.mjs": "a68e1822c9a26ba5be49139555f3e42b2ecea647e4ed31fc23098fd4b318cc5c",
   "index.js": "e34c25f5432c730d52a336b7be86bce1ea9e39b65b4b1cdd9a0cc0f1aef38ca8",
-  "package.json": "17e78101baf3051e818aa87a8b4ed2848791288584adc451812921300dd2dd66",
+  "package.json": "465f6c4931197d1f783696e13b356b80062eda4e9938e2a96f94e1a59ed429a2",
   "release/catalog-status.json": "383e32f09ec6c9587a8ddd5cc8b15690433c95c1ab635b51f568653ec6b62eda",
   "release/catalog.js": "879082ec6178ae9d8518efac4de408dcc1810580cdea1d18f7b65bed65dbdb5a",
   "release/expected-manifest.json": "8cf8b47dd7b3060eb3434cf1419244ef0e5699e67f25b6242dc367a2385f2be3",

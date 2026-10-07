@@ -1,12 +1,14 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # heros
 
 MIT-licensed deterministic hero rules, editable balance parameters, state schemas and host contracts. The public default profile contains **22 heroes / 88 four-slot skills**. It matches the released game's selected rule implementations. The [frontend](https://github.com/dotapk-lol/frontend) and [backend](https://github.com/dotapk-lol/backend) are now public repositories with separate responsibilities and licensing boundaries.
 
-当前仅发布 22 英雄、88 技能槽。其余 24 个运行时英雄和 81 个目录英雄均未发布、暂停适配；游戏保持灰禁不可选。本仓库没有选人 UI，也不自动解锁未发布英雄。
+Only22 heroes/88 slots are released. The other24 runtime and81 catalog-only identities remain unreleased, paused and grey in the game. This package contains no selector UI and does not unlock them.
 
 This is a source release on GitHub, not an npm-registry publication. Node.js >=22 and ESM are required; the serial examples/tests were exercised on Node.js 25.8.1.
 
-## Project architecture / 项目关系
+## Project architecture
 
 [dotapk.lol](https://dotapk.lol) uses three repositories:
 
@@ -68,6 +70,7 @@ The [release profile](docs/released-profile.md) lists exact IDs and four ability
 
 ## Complete developer guide
 
+- [Architecture](docs/architecture.md)
 - [Quick start and package exports](docs/quickstart.md)
 - [Stable IDs, four slots, active/passive registration](docs/registry.md)
 - [Skill factories, lifecycle and typed commands](docs/plugins.md)

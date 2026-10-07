@@ -1,3 +1,5 @@
+[English](adding-heroes.md) | [简体中文](adding-heroes.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Adding hero behavior: complete original training example
 
 The low-level SDK accepts only the frozen 46-hero/four-slot identity roster. It has no public addHero API. A truly new hero ID or ability ID is rejected even if it otherwise looks like HeroDefinition. This page gives the complete currently runnable extension path, then the separate steps required for a future identity expansion.
@@ -13,7 +15,7 @@ The original presentation name and four training skills are Lantern Keeper / Spa
 | 2 | Echo: 3 pure passive damage and counted attacks | onAttack, canonical namespace state, onDeath cleanup |
 | 3 | Clear Sky: cleanse then protection intent | status.cleanse, protect request; recorder does not implement protection |
 
-Complete sources: [plugin.mjs](../examples/training-lantern/plugin.mjs), [host.mjs](../examples/training-lantern/host.mjs), [run.mjs](../examples/training-lantern/run.mjs). They contain only original example logic and the public API. No Valve artwork, descriptions, audio, private engine or network integration is used.
+Complete sources: [plugin.mjs](../examples/training-lantern/plugin.mjs), [host.mjs](../examples/training-lantern/host.mjs), [run.mjs](../examples/training-lantern/run.mjs). They contain only original example logic and the public API. No Valve artwork, descriptions, audio, application engine or network integration is used.
 
 ```js
 import { createHeroRegistry, createRuleSession } from '../index.js';
@@ -35,7 +37,7 @@ The imports above show usage from another file in examples/. The shipped run.mjs
 4. For periodic work declare status source parameters and named binding/delivery pairs. Use accepted handles, then consume authenticated effective record views.
 5. Register into a fresh defaults:false assembly, or use replaceSkill with expected ID/revision for an existing registration. Seal only after validated edits.
 6. Generate the source fingerprint; run focused actual-effect, configuration, lifecycle and replay checks. Freeze exact files and give the host the accepted capability and event requirements.
-7. Leave the global default registry unchanged unless a separately reviewed default change is explicitly intended. A standalone example is not a private game integration.
+7. Leave the global default registry unchanged unless a separately reviewed default change is explicitly intended. A standalone example is not a application game integration.
 
 ## PR to release another existing hero
 

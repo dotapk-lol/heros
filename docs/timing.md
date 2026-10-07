@@ -1,3 +1,5 @@
+[English](timing.md) | [简体中文](timing.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Periodic work and the host clock
 
 Use host simulation seconds, stable event order and declared named handlers. The library creates neither timers nor a frame loop. Avoid Date.now, setTimeout, ambient randomness and hidden asynchronous work inside rules. A fixed-step host must state its seconds/frame conversion and inclusive/exclusive terminal policy; the package has no universal frame rate.

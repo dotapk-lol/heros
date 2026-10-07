@@ -1,9 +1,9 @@
+[English](SECURITY.md) | [简体中文](SECURITY.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Trust and reporting boundaries
 
-Factories are reviewed static JavaScript modules. This package is not a sandbox for executing hostile plugins. Source fingerprints identify shipped files and declared immutable parameters; they do not attest arbitrary closure behavior or make untrusted JavaScript safe.
+Factories are reviewed static JavaScript modules, not sandboxed hostile plugins. Source fingerprints identify shipped files/declared immutable parameters, not arbitrary closure correctness or safety of untrusted JS.
 
-The public context supplies detached frozen facts, namespace-scoped validated state and declared synchronous ports. The host remains responsible for admission, transactions, accepted handle generations, routing, tick order, resource bounds and atomic world/rule checkpoint restore. A valid public metadata shape does not authenticate a private reference; a rules-only snapshot does not restore a world.
+Context provides detached frozen facts, namespace-validated state and declared synchronous ports. Host owns admission, transactions, accepted handle generations, routing, tick order/resource bounds and atomic world/rule restore. Public shape does not authenticate a reference; rules-only snapshots do not restore worlds. Application adapters belong in the separate frontend, not this package; keep credentials, private configuration, real snapshots, media and participant/account information out of contributions. The original finite training recorder omits production policies.
 
-Keep private engine and adapter code, credentials, deployment configuration, real world snapshots, assets, network services and account information outside the public package. The original training recorder is a finite teaching fixture and deliberately omits production policies.
-
-Report a reproducible boundary or restore issue to the release maintainers through their confirmed reporting channel. Use the repository's GitHub issue channel for a minimal non-sensitive reproduction; do not include exploits with live credentials or private world data. Include minimal original fixtures and exact artifact identity, omit sensitive world data and credentials. Publication and release acceptance remain separate owner actions.
+Report reproducible boundary/restore issues through a maintainers-confirmed reporting channel. A GitHub issue may contain a minimal **non-sensitive** original reproduction and exact artifact identity; never publish live credentials, private world/player data or traceable reports. This guide does not invent an email address/private reporting facility. Publication and release acceptance remain separate owner actions.

@@ -1,3 +1,5 @@
+[English](plugins.md) | [简体中文](plugins.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Skill factories, lifecycle and typed commands
 
 A factory is a static reviewed module, not a remote script or sandboxed plugin. Its only fields are `abiVersion`, optional JSON `parameters`, and `create(config)`. The ABI is `heros-effects-2`. `create` receives frozen `hero`, selected `definition`, all `definitions`, declared mana `resources`, and immutable captured `parameters`. It may run repeatedly during prospective compilation: keep it pure and avoid registration-time effects.

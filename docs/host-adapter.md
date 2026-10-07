@@ -1,3 +1,5 @@
+[English](host-adapter.md) | [简体中文](host-adapter.zh-CN.md) | [Website / 官网](https://dotapk.lol)
+
 # Minimal host adapter
 
 The runtime host object is structural, synchronous and small:
@@ -14,7 +16,7 @@ const host = {
 };
 ```
 
-The named functions above describe provider responsibilities; they are not exported library functions. A concrete runnable provider is [the original finite recorder](../examples/training-lantern/host.mjs), which supplies only its declared example ports. No private engine is copied into it.
+The named functions above describe provider responsibilities; they are not exported library functions. A concrete runnable provider is [the original finite recorder](../examples/training-lantern/host.mjs), which supplies only its declared example ports. No application engine is copied into it.
 
 ActorView requires id, heroId, hp, maxHp, mp, maxMp, x, y, dir (-1/1), alive, invulnerable, debuffImmune, passivesEnabled, guarding, rooted and silenced. Values must be finite and required flags boolean. MP/maxMP must fit the selected hero's sealed resource ceiling. Facts are copied and frozen by the session; provider objects must not be exposed to rules. `session.validateFacts(host)` checks both actors' public facts, not a full host world.
 
