@@ -18,7 +18,7 @@ This is a source release on GitHub, not an npm-registry publication. Node.js >=2
 | [frontend](https://github.com/dotapk-lol/frontend) | Cloudflare static client, UI/input/rendering/AI, browser combat world, rule host adapters and WebRTC/BC clients |
 | [backend](https://github.com/dotapk-lol/backend) | Go anonymous sessions, six-digit invitations, WebRTC signaling, result reconciliation and existing MySQL 8.4 statistics behind Nginx at api.dotapk.lol |
 
-The backend already uses the dedicated `dota_duel` schema on the existing AgentSquared host; no database switch or new database is required. Players need no account login. Frontend language preferences stay in localStorage. Go does not execute the skills, and this library does not supply a combat world or networking.
+The backend already uses the dedicated `dota_duel` schema on the existing host; no database switch or new database is required. Players need no account login. Frontend language preferences stay in localStorage. Go does not execute the skills, and this library does not supply a combat world or networking.
 
 Read each application's README for its local environment and [frontend integration](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.md) / [backend integration](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.md) for exact CORS, registry and build bindings. The current game uses `arena-heros22-v1` / `duel-heroes-127-v1` and 22 released heroes; 127 catalog identities do not unlock other heroes. The frontend's pinned review archive and composition differ from this root public88 assembly. Do not replace that archive merely because these repositories are public.
 

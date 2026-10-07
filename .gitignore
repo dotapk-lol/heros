@@ -10,3 +10,14 @@ __pycache__/
 .env
 .env.*
 local-evidence/
+
+# Private operator configuration and authentication material stay local.
+/.ssh/
+/credentials/
+/private-deploy/
+/operator.local.*
+/.npmrc
+*.pem
+*.key
+*.p12
+*.pfx

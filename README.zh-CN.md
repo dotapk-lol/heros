@@ -18,7 +18,7 @@ GitHub源码发布，不是npm registry发行；Node >=22、ESM，已有串行�
 | [frontend](https://github.com/dotapk-lol/frontend) | Cloudflare静态UI/输入/渲染/AI、浏览器世界/host和WebRTC/BC |
 | [backend](https://github.com/dotapk-lol/backend) | Go匿名会话、六位邀请码/信令、结果核对、现有MySQL8.4统计，Nginx提供api.dotapk.lol |
 
-后端已在现有AgentSquared用独立dota_duel，不换库/新建库；玩家无需登录，语言偏好localStorage。Go不执行技能，本库不提供世界/网络。
+后端已在现有主机用独立dota_duel，不换库/新建库；玩家无需登录，语言偏好localStorage。Go不执行技能，本库不提供世界/网络。
 
 环境见各README，精确CORS/registry/build见[前端开发](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.zh-CN.md)/[后端开发](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.zh-CN.md)。游戏 `arena-heros22-v1`/`duel-heroes-127-v1`，127目录不解锁；前端固定review archive/组合不同于root88，不因公开就替换。
 
