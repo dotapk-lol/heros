@@ -6,7 +6,7 @@ Public source version0.2.0-six28.1 targets ABI heros-effects-2. It is derived fr
 
 ## Separate assemblies and distributions
 
-The root default registers28/112. The six-hero release adds eleven source-owned implementations and corrects Dismember healing to consume actual-damage receipts. SDK/core identities and the other existing rule implementations are preserved. The public assembly rulesHash is `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`.
+The root default registers28/112. The six-hero release adds eleven source-owned implementations and corrects Dismember healing to consume actual-damage receipts. SDK/core identities and the other existing rule implementations are preserved. The public assembly rulesHash is `16babcb1b13197104f59d33b39bdd412ace1b339157f23ab1b3559cd78609049`.
 
 The game's frontend composition has143 metadata rows, separate release gates and rulesHash `af7cba2fb2aba770cd9ea18c08c4be97ac8d09d53bde76c6c3e0aa98fb4b0506`.143 is not an acceptance count or public roster. The public112 assembly cannot load a frontend143 snapshot. The existing low-level SDK initializer remains unchanged through the sdk subpath; source entry/index and core identities are preserved.
 

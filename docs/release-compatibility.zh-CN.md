@@ -6,7 +6,7 @@
 
 ## 不同组合与分发
 
-根默认28/112，本批新增11个源代码规则实现，并修正肢解为实际伤害回执治疗。SDK/core身份及其他既有规则实现保持不变。公共rulesHash `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`。
+根默认28/112，本批新增11个源代码规则实现，并修正肢解为实际伤害回执治疗。SDK/core身份及其他既有规则实现保持不变。公共rulesHash `16babcb1b13197104f59d33b39bdd412ace1b339157f23ab1b3559cd78609049`。
 
 前端组合含143 metadata行、独立发布gate和rulesHash `af7cba2fb2aba770cd9ea18c08c4be97ac8d09d53bde76c6c3e0aa98fb4b0506`，143不是验收/发布数量；public112不能恢复frontend143快照。sdk subpath底层initializer、source index/core身份不变。
 

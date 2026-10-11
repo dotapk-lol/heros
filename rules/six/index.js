@@ -14,7 +14,7 @@ export function sixFactory(heroId,slot){return {abiVersion:BATTLE_ABI,parameters
  return {behaviorId:'six-heroes/'+id,revision:'1.0.0',...codeIdentity(['rules/six/index.js']),stateSchema:EMPTY_STATE_SCHEMA,requires:[],
  activate(ctx,e){event(e);const f=ctx.actor(e.owner),t=ctx.actor(e.target),out=[];
   if(id==='pudge_hook'||id==='phantom_assassin_dagger')out.push({kind:'projectile',x:f.x+e.direction*35,y:f.y+(m.projectile_height||100),direction:e.direction,speed:m.projectile_speed_wu_s,range:m.range_wu,radius:Math.max(12,m.radius_wu)});
-  else if(id==='phantom_assassin_strike'){if(near(ctx,e,m.range_wu)&&t.alive){out.push({kind:'move',owner:e.owner,x:t.x-e.direction*70},hit(e.owner,e.target),buff(e.owner,id,{attack_interval_multiplier:m.attack_interval_multiplier},m.buff_duration_s));}}
+  else if(id==='phantom_assassin_strike'){if(near(ctx,e,m.range_wu)&&t.alive&&(m.height!=='ground'||t.y<45))out.push({kind:'target',owner:e.owner,target:e.target,range:m.range_wu,reflectable:true});}
   else if(id==='juggernaut_omnislash'){if(near(ctx,e,m.range_wu)&&t.alive){out.push({kind:'cleanse',owner:e.owner,tier:'basic'},{kind:'protect',owner:e.owner,duration:m.duration_s});for(let index=0;index<m.ticks;index++)out.push({kind:'job',index,offset:m.tick_offsets_s[index]});}}
   else if(id==='earthshaker_fissure'){out.push({kind:'wall',x:e.aim,duration:m.duration_s,height:m.wall_height_wu});if(Math.abs(t.x-e.aim)<=m.radius_wu+22&&t.y<45)out.push(hit(e.owner,e.target));}
   else if(id==='earthshaker_totem')out.push(buff(e.owner,id,{next_attack_override:m.next_attack_override,next_attack_range_bonus:m.next_attack_range_bonus}));
@@ -24,6 +24,7 @@ export function sixFactory(heroId,slot){return {abiVersion:BATTLE_ABI,parameters
   else if(near(ctx,e,m.radius_wu)&&(m.height!=='ground'||t.y<45))out.push(hit(e.owner,e.target));
   return out;
  },onStage(ctx,e){event(e);const f=ctx.actor(e.owner),t=ctx.actor(e.target);
+  if(id==='phantom_assassin_strike'){const r=e.route;if(!r||typeof r.accepted!=='boolean'||typeof r.reflected!=='boolean'||r.owner!==(r.reflected?e.target:e.owner)||r.target!==1-r.owner)throw Error('Invalid Strike route');if(!r.accepted)return [];if(r.reflected)return [hit(r.owner,r.target,{reflected:true})];return [{kind:'move',owner:e.owner,x:t.x-e.direction*70},hit(e.owner,e.target),buff(e.owner,id,{attack_interval_multiplier:m.attack_interval_multiplier},m.buff_duration_s)];}
   if(id==='juggernaut_omnislash'){if(!Number.isInteger(e.index)||e.index<0||e.index>=m.ticks)throw Error('Invalid Omnislash pulse');if(!f.alive||!t.alive||e.blocked||!near(ctx,e,m.tracking_break_wu))return [];return [{kind:'move',owner:e.owner,x:t.x-f.dir*75},hit(e.owner,e.target,{amount:m.hit_damages?.[e.index]??m.damage,basic:true,bladeDance:true})];}
   if(id==='tidehunter_ravage')return !e.hit&&t.alive&&Math.abs(t.x-e.x)<=Math.min(m.radius_wu,num(e.age,0,3600)*m.wave_speed_wu_s)?[hit(e.owner,e.target)]:[];
   throw Error('Unsupported six-hero stage');

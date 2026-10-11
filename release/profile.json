@@ -36,7 +36,7 @@
   "upstreamPublicArchiveSha256": "2885ade8d7eeb06a03045f41ac2907e17d5e753f0b881091515a3afc9005a391",
   "abiVersion": "heros-effects-2",
   "description": "28 heroes with four implemented 1v1 skill slots each; other adaptations remain paused.",
-  "rulesHash": "c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4",
+  "rulesHash": "16babcb1b13197104f59d33b39bdd412ace1b339157f23ab1b3559cd78609049",
   "rosterId": "arena-heros28-v1",
   "mechanicsVersion": "arena-heros28-public112-v1"
 }

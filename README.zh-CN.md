@@ -58,7 +58,7 @@ console.log(session.has(1, 0, 'activate')); //true
 
 原SDK initializer在@dotapk/heros/sdk，固定46定义/原三默认；root仅112。内部definitions/resources仍46，因为SDK验证固定目录，定义不授予可玩。
 
-public112 rulesHash `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`，不同于前端较大组合；发布不替换live archive/运行，见[兼容](docs/release-compatibility.zh-CN.md)。
+public112 rulesHash `16babcb1b13197104f59d33b39bdd412ace1b339157f23ab1b3559cd78609049`，不同于前端较大组合；发布不替换live archive/运行，见[兼容](docs/release-compatibility.zh-CN.md)。
 
 ## 已发英雄
 

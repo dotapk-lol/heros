@@ -42,3 +42,7 @@ Slardar31:2 uses the accepted Bash rule, not an automatic Seaborn/water upgrade.
 ## Six-hero release
 
 The new IDs are 0, 2, 6, 10, 14 and 19. The public package has 28 heroes and 112 slots; the frontend composes 143 implementation metadata rows. The other 18 runtime identities stay disabled. Dismember heals from actual committed damage, including mitigation and overkill limits. New scheduled slashes, projectiles, walls, buffs and waves preserve deterministic snapshots and clear on rematch.
+
+## Six-hero review corrections
+
+Phantom Strike routes through Counterspell before motion, damage, or attack-speed effects. A reflected cast emits only a reflected hit; failed target admission emits no motion or buff. The host continues to own mana/charge admission and damage receipts. Dismember healing uses actual committed damage; its host control must obey the existing cumulative 1.5-second cap and 1-second protection interval.

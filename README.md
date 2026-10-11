@@ -58,7 +58,7 @@ See [examples/balance-change.mjs](examples/balance-change.mjs) for a real source
 
 The original SDK's initializer is preserved separately at `@dotapk/heros/sdk`: it retains the fixed46 definition roster and its original three default implementations. The root entry assembles only the released112. Its internal definitions/resources retain the same46 identities because the SDK validates that fixed catalog; definitions do not make an unreleased hero playable.
 
-Public112 rulesHash: `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`. This is a public assembly identity, distinct from the game's larger frontend composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
+Public112 rulesHash: `16babcb1b13197104f59d33b39bdd412ace1b339157f23ab1b3559cd78609049`. This is a public assembly identity, distinct from the game's larger frontend composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
 
 ## Released heroes
 
