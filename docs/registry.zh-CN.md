@@ -4,7 +4,7 @@
 
 每个运行定义含字符串id、registryNumericId、独立valveHeroId及四个有序ability。index为0..3，S1是index0；数字英雄ID不是数组位置或actor ID，ActorId仍0/1。
 
-根 `createHeroRegistry()` 返回22/88；`@dotapk/heros/sdk` 保留46定义/三个默认初始化、支持defaults:false。两者SDK校验不变，root heroes仅22，但sealed.definitions/resources保留固定46供稳定身份/资源上限。定义存在不等于注册或游戏准入。
+根 `createHeroRegistry()` 返回28/112；`@dotapk/heros/sdk` 保留46定义/三个默认初始化、支持defaults:false。两者SDK校验不变，root heroes仅28，但sealed.definitions/resources保留固定46供稳定身份/资源上限。定义存在不等于注册或游戏准入。
 
 ```js
 import { createHeroRegistry } from '@dotapk/heros';
@@ -34,4 +34,4 @@ mvp.passive表示准入族，不可替换passive/input/effect。被动元数据�
 
 ## 已发布状态
 
-根profile仅22 ID/88行，其余24运行时、81目录身份未发并暂停，没有公共184组合。底层源码、合法定义、factory或手改registry不证明host支持/授权启用。游戏独立实施选择器/CPU/网络/快照白名单，库不包含这些应用系统。
+根profile仅28 ID/88行，其余18运行时、81目录身份未发并暂停，没有公共184组合。底层源码、合法定义、factory或手改registry不证明host支持/授权启用。游戏独立实施选择器/CPU/网络/快照白名单，库不包含这些应用系统。

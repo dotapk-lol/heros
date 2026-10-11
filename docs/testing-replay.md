@@ -27,7 +27,7 @@ Each command executes one named test, with no browser or worker pool. It uses on
 - Changed identities and invalid state do not partially mutate the rule session on restore.
 - Disabled passive delivery produces no damage or state, enabled delivery counts attacks, and death removes owned rule state.
 - Actor/event copies are frozen, unknown source identity and new hero IDs are rejected, and cross-ability invocation fails before effect delivery.
-- The low-level SDK default three and rulesHash remain unchanged; the root profile registers exactly the released88 and matches its manifest.
+- The low-level SDK default three and rulesHash remain unchanged; the root profile registers exactly the released112 and matches its manifest.
 
 ## Checkpoint boundaries
 

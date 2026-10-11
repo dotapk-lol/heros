@@ -2,24 +2,18 @@
 
 # Unreleased heroes: paused
 
-The public default and the released game support only the22 profile. The remaining24 runtime identities have incomplete four-slot release coverage; another81 identities are catalog-only and have no published four-slot runtime. All105 are disabled for the released game. This repository supplies status information, not UI, selection or network gates. No further adaptation was performed for this release.
+The public default and the released game support only the28 profile. The remaining18 runtime identities have incomplete four-slot release coverage; another81 identities are catalog-only and have no published four-slot runtime. All99 are disabled for the released game. This repository supplies status information, not UI, selection or network gates. The six newly released heroes are listed in released-profile.md.
 
-A rule existing in a shared file or a partially accepted slot does not publish a whole hero. Shared original modules are retained when required by the exact source/dependency identity; only the88 selected manifest entries are assembled. The184-definition catalog is not184 connected skills.
+A rule existing in a shared file or a partially accepted slot does not publish a whole hero. Shared original modules are retained when required by the exact source/dependency identity; only the112 selected manifest entries are assembled. The184-definition catalog is not184 connected skills.
 
-## 24 runtime heroes
+## 18 runtime heroes
 
 | ID | Identity | Baseline accepted slots | Remaining release gap |
 | --- | --- | --- | --- |
-| 0 | juggernaut | 3/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
-| 2 | pudge | 3/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
-| 6 | phantom_assassin | 2/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
-| 10 | earthshaker | 1/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 11 | mirana | 1/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 12 | sven | 2/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 13 | zeus | 3/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
-| 14 | windranger | 2/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 16 | storm_spirit | 1/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
-| 19 | tidehunter | 2/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 21 | valve_4 | 3/4 | Movement projection for Thirst not accepted in this frozen profile; paused. |
 | 25 | valve_15 | 1/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |
 | 29 | valve_23 | 3/4 | Four-slot mechanism/lifecycle acceptance incomplete; adaptation and publication paused. |

@@ -4,7 +4,7 @@
 
 Each runtime definition has string id, registryNumericId, separate valveHeroId and exactly four ordered abilities. Indices are0..3; S1 means index0. Numeric hero IDs are not array positions or actor IDs. ActorId remains0 or1.
 
-Root `createHeroRegistry()` returns the22/88 assembly. `@dotapk/heros/sdk` retains the original46-definition/three-default initializer and supports `{defaults:false}`. Both use the same unchanged SDK validation. Root `heroes` is the released22 list, while sealed.definitions and resources retain the fixed46 catalog for stable identity/resource bounds. Presence of a definition is not registration or game admission.
+Root `createHeroRegistry()` returns the28/112 assembly. `@dotapk/heros/sdk` retains the original46-definition/three-default initializer and supports `{defaults:false}`. Both use the same unchanged SDK validation. Root `heroes` is the released28 list, while sealed.definitions and resources retain the fixed46 catalog for stable identity/resource bounds. Presence of a definition is not registration or game admission.
 
 ```js
 import { createHeroRegistry } from '@dotapk/heros';
@@ -34,4 +34,4 @@ There is no registerHero/addHero/unregister/registerPluginUrl API. The construct
 
 ## Published status
 
-The root profile selects only the released22 IDs and88 manifest rows. The remaining24 runtime heroes and81 catalog-only entries are unreleased and paused. There is no public184 candidate assembly. Low-level source, a valid definition, a factory's existence or a manually changed registry is not proof of host support or authorization to enable a paused hero. The released game separately enforces its selector/CPU/network/snapshot whitelist; this library contains none of those application systems.
+The root profile selects only the released28 IDs and112 manifest rows. The remaining18 runtime heroes and81 catalog-only entries are unreleased and paused. There is no public184 candidate assembly. Low-level source, a valid definition, a factory's existence or a manually changed registry is not proof of host support or authorization to enable a paused hero. The released game separately enforces its selector/CPU/network/snapshot whitelist; this library contains none of those application systems.

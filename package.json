@@ -1,10 +1,10 @@
 {
   "name": "@dotapk/heros",
-  "version": "0.1.0",
+  "version": "0.2.0-six28.1",
   "private": false,
   "type": "module",
   "license": "MIT",
-  "description": "Deterministic hero rules, balance parameters and host contracts for22 released heroes",
+  "description": "Deterministic hero rules and host contracts for 28 released heroes",
   "repository": {
     "type": "git",
     "url": "https://github.com/dotapk-lol/heros.git"
@@ -135,7 +135,15 @@
     "docs/testing-replay.zh-CN.md",
     "docs/timing.zh-CN.md",
     "docs/unreleased.zh-CN.md",
-    "scripts/check-docs.py"
+    "scripts/check-docs.py",
+    "rules/six/index.js",
+    "test/probes.mjs",
+    "rules/c/centaur.js",
+    "rules/c/extra.js",
+    "rules/c/index.js",
+    "rules/c/skywrath.js",
+    "rules/c/state.js",
+    "rules/c/common.js"
   ],
   "scripts": {
     "build": "node --max-old-space-size=256 scripts/fingerprint.mjs",

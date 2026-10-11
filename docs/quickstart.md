@@ -11,7 +11,7 @@ npm install github:dotapk-lol/heros#main
 
 | Export | Role |
 | --- | --- |
-| `@dotapk/heros` | Default22/88 assembly, released heroes/profile/selectors and shared session/schema APIs |
+| `@dotapk/heros` | Default28/112 assembly, released heroes/profile/selectors and shared session/schema APIs |
 | `@dotapk/heros/sdk` | Unchanged low-level SDK,46 definitions and original three-default initializer |
 | `@dotapk/heros/content` | Fixed46 definition catalog; not a playable roster |
 | `@dotapk/heros/catalog` | Released/paused status for all127 known identities |
@@ -23,7 +23,7 @@ No all184 candidate factory entry is exported. Rule source files are internal im
 ```js
 import { createHeroRegistry, createRuleSession, heroes } from '@dotapk/heros';
 const sealed = createHeroRegistry().seal();
-console.log(heroes.length, sealed.manifest.length); //22,88
+console.log(heroes.length, sealed.manifest.length); //28,112
 const session = createRuleSession(sealed);
 // host = {now(),actor(id),random(),ports}; see host-adapter.md for concrete contracts.
 ```
@@ -35,7 +35,7 @@ import { createHeroRegistry } from '@dotapk/heros/sdk';
 const empty = createHeroRegistry(undefined, { defaults: false });
 ```
 
-The low-level SDK retains its fixed46 identity/recipe constraints. Do not pass only the22 filtered definitions into it; keep the whole fixed catalog when modifying numeric definitions.
+The low-level SDK retains its fixed46 identity/recipe constraints. Do not pass only the28 filtered definitions into it; keep the whole fixed catalog when modifying numeric definitions.
 
 From a checkout run `npm run build`, `npm test`, `npm run example`. The original Lantern Keeper example emits Spark15 magical damage, Echo3 pure damage, Mend12 healing plus two2-point pulses at.25/.5 seconds, then cleanse and debuff-immunity requests. Its constant-RNG recorder restores both its finite host state and the rules-only checkpoint and compares the exact continuation. It does not pay casts or simulate protection.
 

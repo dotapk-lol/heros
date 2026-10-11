@@ -23,7 +23,7 @@
 - 相关clock、中断/死亡、effective状态/终点顺序清楚。
 - 焦点测试效果、拒绝/restore，记录精确命令/运行时。
 - 审fingerprint/文件清单，无无关rule/schema/default变更。
-- 区分definition/candidate/registered/host-accepted；仅22/88默认，不称184全接线。
+- 区分definition/candidate/registered/host-accepted；仅28/112默认，不称184全接线。
 - 不带私有路径、secret、Valve媒体/复制描述。
 - README/guide/例子/打包链接正确，精确组合/版本清楚，不仅改状态解锁。
 

@@ -2,9 +2,9 @@
 
 # heros
 
-MIT确定性英雄规则、可编辑平衡参数、state schema与host合约。公共默认**22英雄/88四槽技能**，匹配已发游戏选定规则。[前端](https://github.com/dotapk-lol/frontend)、[后端](https://github.com/dotapk-lol/backend)现为独立公共仓库，职责/许可边界分开。
+MIT确定性英雄规则、可编辑平衡参数、state schema与host合约。公共默认**28英雄/112四槽技能**，匹配已发游戏选定规则。[前端](https://github.com/dotapk-lol/frontend)、[后端](https://github.com/dotapk-lol/backend)现为独立公共仓库，职责/许可边界分开。
 
-仅发布22/88，其余24运行时+81目录身份未发、暂停、游戏灰禁。本包无选人UI，不自动解锁。
+仅发布28/112，其余18运行时+81目录身份未发、暂停、游戏灰禁。本包无选人UI，不自动解锁。
 
 GitHub源码发布，不是npm registry发行；Node >=22、ESM，已有串行例子/测试使用25.8.1。
 
@@ -20,7 +20,7 @@ GitHub源码发布，不是npm registry发行；Node >=22、ESM，已有串行�
 
 后端已在现有主机用独立dota_duel，不换库/新建库；玩家无需登录，语言偏好localStorage。Go不执行技能，本库不提供世界/网络。
 
-环境见各README，精确CORS/registry/build见[前端开发](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.zh-CN.md)/[后端开发](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.zh-CN.md)。游戏 `arena-heros22-v1`/`duel-heroes-127-v1`，127目录不解锁；前端固定review archive/组合不同于root88，不因公开就替换。
+环境见各README，精确CORS/registry/build见[前端开发](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.zh-CN.md)/[后端开发](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.zh-CN.md)。游戏 `arena-heros28-v1`/`duel-heroes-127-v1`，127目录不解锁；前端固定review archive/组合不同于root112，不因公开就替换。
 
 [balance-data说明](balance-data/README.zh-CN.md)只描述**内部人工**从现有MySQL整理汇总、人工审阅后提交，无真实统计/导出脚本/任务/频率承诺。PVP confirmed/peer_agreement与PVE/local/BC recorded/client_reported分开，中止/争议/异常局排除，不自动改参数。
 
@@ -44,9 +44,9 @@ npm run example
 
 ```js
 import { heroes, createHeroRegistry, createRuleSession, isReleasedHero } from '@dotapk/heros';
-const registry = createHeroRegistry(); //22,88
+const registry = createHeroRegistry(); //28,112
 const sealed = registry.seal();
-console.log(heroes.length, sealed.manifest.length); //22,88
+console.log(heroes.length, sealed.manifest.length); //28,112
 console.log(sealed.abiVersion, sealed.rulesHash);
 console.log(isReleasedHero(1), isReleasedHero(0)); //true,false
 const session = createRuleSession(sealed);
@@ -56,9 +56,9 @@ console.log(session.has(1, 0, 'activate')); //true
 
 [balance-change](examples/balance-change.mjs)演示真实源参数damage240→60、rulesHash改变，原始recorder不是engine或施法支付证明。
 
-原SDK initializer在@dotapk/heros/sdk，固定46定义/原三默认；root仅88。内部definitions/resources仍46，因为SDK验证固定目录，定义不授予可玩。
+原SDK initializer在@dotapk/heros/sdk，固定46定义/原三默认；root仅112。内部definitions/resources仍46，因为SDK验证固定目录，定义不授予可玩。
 
-public88 rulesHash `bfca4c893786d98da8cc18d8c560a88e76fb9e5e79c1e71920bf78705a918d31`，不同于前端较大组合；发布不替换live archive/运行，见[兼容](docs/release-compatibility.zh-CN.md)。
+public112 rulesHash `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`，不同于前端较大组合；发布不替换live archive/运行，见[兼容](docs/release-compatibility.zh-CN.md)。
 
 ## 已发英雄
 
@@ -89,7 +89,7 @@ examples/training-lantern为原创完整教学插件/有限recorder/精确重放
 
 | 路径 | 内容 |
 | --- | --- |
-| release/ | released22、factory组合、expected88 |
+| release/ | released28、factory组合、expected112 |
 | content/ | 数值定义/resources，内部固定46载体 |
 | contract/ | registry/session/state/effect/schedule/value与TS |
 | rules/ | 审核静态实现、参数和生成fingerprint |

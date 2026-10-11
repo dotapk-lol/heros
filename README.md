@@ -2,9 +2,9 @@
 
 # heros
 
-MIT-licensed deterministic hero rules, editable balance parameters, state schemas and host contracts. The public default profile contains **22 heroes / 88 four-slot skills**. It matches the released game's selected rule implementations. The [frontend](https://github.com/dotapk-lol/frontend) and [backend](https://github.com/dotapk-lol/backend) are now public repositories with separate responsibilities and licensing boundaries.
+MIT-licensed deterministic hero rules, editable balance parameters, state schemas and host contracts. The public default profile contains **28 heroes / 112 four-slot skills**. It matches the released game's selected rule implementations. The [frontend](https://github.com/dotapk-lol/frontend) and [backend](https://github.com/dotapk-lol/backend) are now public repositories with separate responsibilities and licensing boundaries.
 
-Only22 heroes/88 slots are released. The other24 runtime and81 catalog-only identities remain unreleased, paused and grey in the game. This package contains no selector UI and does not unlock them.
+Only28 heroes/112 slots are released. The other18 runtime and81 catalog-only identities remain unreleased, paused and grey in the game. This package contains no selector UI and does not unlock them.
 
 This is a source release on GitHub, not an npm-registry publication. Node.js >=22 and ESM are required; the serial examples/tests were exercised on Node.js 25.8.1.
 
@@ -20,7 +20,7 @@ This is a source release on GitHub, not an npm-registry publication. Node.js >=2
 
 The backend already uses the dedicated `dota_duel` schema on the existing host; no database switch or new database is required. Players need no account login. Frontend language preferences stay in localStorage. Go does not execute the skills, and this library does not supply a combat world or networking.
 
-Read each application's README for its local environment and [frontend integration](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.md) / [backend integration](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.md) for exact CORS, registry and build bindings. The current game uses `arena-heros22-v1` / `duel-heroes-127-v1` and 22 released heroes; 127 catalog identities do not unlock other heroes. The frontend's pinned review archive and composition differ from this root public88 assembly. Do not replace that archive merely because these repositories are public.
+Read each application's README for its local environment and [frontend integration](https://github.com/dotapk-lol/frontend/blob/main/docs/DEVELOPMENT.md) / [backend integration](https://github.com/dotapk-lol/backend/blob/main/docs/DEVELOPMENT.md) for exact CORS, registry and build bindings. The current game uses `arena-heros28-v1` / `duel-heroes-127-v1` and 28 released heroes; 127 catalog identities do not unlock other heroes. The frontend's pinned review archive and composition differ from this root public112 assembly. Do not replace that archive merely because these repositories are public.
 
 [balance-data/README.md](balance-data/README.md) describes **internal manual** preparation of aggregate snapshots from existing MySQL and human review before commit. It contains no real statistics, export script, scheduled task or promised cadence. PVP `confirmed / peer_agreement` is separate from PVE/local/BC `recorded / client_reported`; aborted, disputed and abnormal games are excluded from win rates. These aggregate records do not automatically change rule parameters.
 
@@ -44,9 +44,9 @@ There are no third-party runtime dependencies or private services needed for the
 
 ```js
 import { heroes, createHeroRegistry, createRuleSession, isReleasedHero } from '@dotapk/heros';
-const registry = createHeroRegistry(); //22 released heroes,88 registered skills
+const registry = createHeroRegistry(); //28 released heroes,112 registered skills
 const sealed = registry.seal();
-console.log(heroes.length, sealed.manifest.length); //22,88
+console.log(heroes.length, sealed.manifest.length); //28,112
 console.log(sealed.abiVersion, sealed.rulesHash);
 console.log(isReleasedHero(1), isReleasedHero(0)); //true,false
 const session = createRuleSession(sealed);
@@ -56,9 +56,9 @@ console.log(session.has(1, 0, 'activate')); //true
 
 See [examples/balance-change.mjs](examples/balance-change.mjs) for a real source-parameter change: the detached damage request changes240→60 and rulesHash changes. Its recorder is original public test code, not a game engine or cast-payment proof.
 
-The original SDK's initializer is preserved separately at `@dotapk/heros/sdk`: it retains the fixed46 definition roster and its original three default implementations. The root entry assembles only the released88. Its internal definitions/resources retain the same46 identities because the SDK validates that fixed catalog; definitions do not make an unreleased hero playable.
+The original SDK's initializer is preserved separately at `@dotapk/heros/sdk`: it retains the fixed46 definition roster and its original three default implementations. The root entry assembles only the released112. Its internal definitions/resources retain the same46 identities because the SDK validates that fixed catalog; definitions do not make an unreleased hero playable.
 
-Public88 rulesHash: `bfca4c893786d98da8cc18d8c560a88e76fb9e5e79c1e71920bf78705a918d31`. This is a public assembly identity, distinct from the game's larger frontend composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
+Public112 rulesHash: `c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4`. This is a public assembly identity, distinct from the game's larger frontend composition. Publishing this repository does not replace the live game's pinned archive or change its runtime. See [compatibility](docs/release-compatibility.md).
 
 ## Released heroes
 
@@ -89,7 +89,7 @@ The [release profile](docs/released-profile.md) lists exact IDs and four ability
 
 | Path | Contents |
 | --- | --- |
-| `release/` | Released22 allowlist, factory assembly and expected88 manifest |
+| `release/` | Released28 allowlist, factory assembly and expected112 manifest |
 | `content/` | Numeric definitions/resources; fixed46 SDK identities remain internal definition carriers |
 | `contract/` | Registry, session, state/effect/schedule/value schemas and TypeScript contract |
 | `rules/` | Reviewed static implementations, parameters and generated source fingerprints |

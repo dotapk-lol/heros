@@ -3,10 +3,10 @@
     "registryNumericId": 0,
     "id": "juggernaut",
     "valveHeroId": 8,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 3,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 1,
@@ -21,10 +21,10 @@
     "registryNumericId": 2,
     "id": "pudge",
     "valveHeroId": 14,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 3,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 3,
@@ -57,10 +57,10 @@
     "registryNumericId": 6,
     "id": "phantom_assassin",
     "valveHeroId": 44,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 2,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 7,
@@ -93,10 +93,10 @@
     "registryNumericId": 10,
     "id": "earthshaker",
     "valveHeroId": 7,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 1,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 11,
@@ -129,10 +129,10 @@
     "registryNumericId": 14,
     "id": "windranger",
     "valveHeroId": 21,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 2,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 15,
@@ -174,10 +174,10 @@
     "registryNumericId": 19,
     "id": "tidehunter",
     "valveHeroId": 29,
-    "status": "unreleased-paused",
+    "status": "released",
     "scope": "runtime",
-    "acceptedSlotsInBaseline": 2,
-    "selectable": false
+    "acceptedSlotsInBaseline": 4,
+    "selectable": true
   },
   {
     "registryNumericId": 20,

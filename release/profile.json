@@ -1,17 +1,23 @@
 {
-  "name": "heros22",
-  "version": 1,
+  "name": "heros28",
+  "version": 2,
   "heroIds": [
+    0,
     1,
+    2,
     3,
     4,
     5,
+    6,
     7,
     8,
     9,
+    10,
+    14,
     15,
     17,
     18,
+    19,
     28,
     31,
     32,
@@ -25,10 +31,12 @@
     81,
     82
   ],
-  "slots": 88,
+  "slots": 112,
   "upstreamPublicPackage": "@dotapk/heros@0.1.0-review.10-rupture-order.1",
   "upstreamPublicArchiveSha256": "2885ade8d7eeb06a03045f41ac2907e17d5e753f0b881091515a3afc9005a391",
   "abiVersion": "heros-effects-2",
-  "description": "Original public rules for22 complete heroes. Other hero adaptations are paused.",
-  "rulesHash": "bfca4c893786d98da8cc18d8c560a88e76fb9e5e79c1e71920bf78705a918d31"
+  "description": "28 heroes with four implemented 1v1 skill slots each; other adaptations remain paused.",
+  "rulesHash": "c2e180393dd9a639ee806c85df949b32aa427a8d018b77324f35cfb981b5e6e4",
+  "rosterId": "arena-heros28-v1",
+  "mechanicsVersion": "arena-heros28-public112-v1"
 }

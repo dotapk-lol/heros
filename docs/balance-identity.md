@@ -23,7 +23,7 @@ rulesHash incorporates ABI, core source identity, full definitions/resources, so
 
 Snapshots require ABI, exact rulesHash, snapshot version 1 and known validated namespaces. A new parameter/configuration cannot restore the old snapshot by default. Host world and rules must be restored together only after both candidates pass validation. There is no built-in migration or compatibility override; a migration needs explicit reviewed tooling.
 
-Use the release owner's confirmed version and exact assembly hash in host logs/checkpoints. The root released88 and low-level SDK assemblies have different manifests; track the exact assembly rather than only version0.1.0. See [release compatibility](release-compatibility.md).
+Use the release owner's confirmed version and exact assembly hash in host logs/checkpoints. The root released112 and low-level SDK assemblies have different manifests; track the exact assembly rather than only version0.1.0. See [release compatibility](release-compatibility.md).
 
 ## Runnable released-skill balance example
 

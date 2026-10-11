@@ -6,7 +6,7 @@
 
 factory.parameters传JSON、create中校验、执行时用不可变parameters。training展示有限正amount和cadence/duration校验，damage15→21改变实际damage请求和sealed rulesHash，不改变hero/ability ID或声称原生平衡。
 
-definition变化保留模板、effect/input/passive族和稳定ID；数值有界、timing另有限制。已有定义用replaceSkill及预期abilityId/revision。新配置clone完整46 shipped定义，经SDK createHeroRegistry(cloned,{defaults:...})或root released initializer传完整46，不只22。host资源fact不能超sealed resources.maxMpByHero，私有modifier提高上限不自动支持。
+definition变化保留模板、effect/input/passive族和稳定ID；数值有界、timing另有限制。已有定义用replaceSkill及预期abilityId/revision。新配置clone完整46 shipped定义，经SDK createHeroRegistry(cloned,{defaults:...})或root released initializer传完整46，不只28。host资源fact不能超sealed resources.maxMpByHero，私有modifier提高上限不自动支持。
 
 ## 四类身份
 
@@ -23,7 +23,7 @@ codeIdentity(sourceFiles)只接受生成rules/fingerprint.js中的已审核路�
 
 快照要求ABI、精确rulesHash、version1和已知验证namespace。新配置默认不能恢复旧快照；世界与规则candidate都通过再一起恢复。无内置迁移/兼容覆盖，迁移需明确审核工具。
 
-host日志/checkpoint用发布者确认的version与精确组合hash；root88与底层SDK不同，仅0.1.0不够，见[兼容](release-compatibility.zh-CN.md)。
+host日志/checkpoint用发布者确认的version与精确组合hash；root112与底层SDK不同，仅0.1.0不够，见[兼容](release-compatibility.zh-CN.md)。
 
 ## 可运行已发技能参数示例
 

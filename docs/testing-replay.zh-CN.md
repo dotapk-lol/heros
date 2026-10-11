@@ -27,7 +27,7 @@ node test/documentation/check.mjs defaults
 - changed identity/invalid state不部分修改session恢复。
 - disabled passive不damage/state，enabled计攻击，death删owned state。
 - actor/event冻结，未知source身份/新hero ID拒绝，跨ability执行前失败。
-- 底层SDK原三默认及rulesHash不变，root恰88并匹配manifest。
+- 底层SDK原三默认及rulesHash不变，root恰112并匹配manifest。
 
 ## checkpoint边界
 

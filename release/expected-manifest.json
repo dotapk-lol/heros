@@ -1,5 +1,159 @@
 [
   {
+    "heroId": 0,
+    "slot": 0,
+    "abilityId": "juggernaut_blade_fury",
+    "behaviorId": "legacy-0-9/remaining/juggernaut_blade_fury",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": "heros/legacy-0-9/juggernaut_blade_fury",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
+    "sourceFiles": [
+      "rules/legacy-0-9/remaining-channels.js",
+      "rules/legacy-0-9/remaining-common.js",
+      "rules/legacy-0-9/remaining-effects.js",
+      "rules/legacy-0-9/remaining-passives.js",
+      "rules/legacy-0-9/remaining-projectiles.js",
+      "rules/legacy-0-9/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 0,
+      "slot": 0,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-field-v1",
+        "legacy-hit-v1",
+        "legacy-status-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 0,
+    "slot": 1,
+    "abilityId": "juggernaut_healing_ward",
+    "behaviorId": "legacy-0-9/remaining/juggernaut_healing_ward",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": "heros/legacy-0-9/juggernaut_healing_ward",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
+    "sourceFiles": [
+      "rules/legacy-0-9/remaining-channels.js",
+      "rules/legacy-0-9/remaining-common.js",
+      "rules/legacy-0-9/remaining-effects.js",
+      "rules/legacy-0-9/remaining-passives.js",
+      "rules/legacy-0-9/remaining-projectiles.js",
+      "rules/legacy-0-9/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 0,
+      "slot": 1,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-field-v1",
+        "legacy-hit-v1",
+        "legacy-status-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 0,
+    "slot": 2,
+    "abilityId": "juggernaut_blade_dance",
+    "behaviorId": "legacy-0-9/juggernaut_blade_dance",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "a40e8d69da471332a2e97f9430980c283dd1af669891cd33c7be6796944734fe",
+    "sourceFiles": [
+      "rules/legacy-0-9/projections.js"
+    ],
+    "executionParameters": {},
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "projectAttack"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 0,
+    "slot": 3,
+    "abilityId": "juggernaut_omnislash",
+    "behaviorId": "six-heroes/juggernaut_omnislash",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 0,
+      "slot": 3
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
     "heroId": 1,
     "slot": 0,
     "abilityId": "crystal_maiden_nova",
@@ -7,7 +161,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/crystal_maiden_nova",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -51,7 +205,7 @@
       "target-route"
     ],
     "namespace": "heros/legacy-0-9/crystal_maiden_frostbite",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -125,7 +279,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/crystal_maiden_freezing_field",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -136,6 +290,165 @@
     ],
     "executionParameters": {
       "heroId": 1,
+      "slot": 3,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-channel-v1",
+        "legacy-hit-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onInterrupt",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 2,
+    "slot": 0,
+    "abilityId": "pudge_hook",
+    "behaviorId": "six-heroes/pudge_hook",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 2,
+      "slot": 0
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 2,
+    "slot": 1,
+    "abilityId": "pudge_rot",
+    "behaviorId": "legacy-0-9/remaining/pudge_rot",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": "heros/legacy-0-9/pudge_rot",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
+    "sourceFiles": [
+      "rules/legacy-0-9/remaining-channels.js",
+      "rules/legacy-0-9/remaining-common.js",
+      "rules/legacy-0-9/remaining-effects.js",
+      "rules/legacy-0-9/remaining-passives.js",
+      "rules/legacy-0-9/remaining-projectiles.js",
+      "rules/legacy-0-9/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 2,
+      "slot": 1,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-field-v1",
+        "legacy-hit-v1",
+        "legacy-status-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 2,
+    "slot": 2,
+    "abilityId": "pudge_meat_shield",
+    "behaviorId": "legacy-0-9-next/pudge_meat_shield",
+    "revision": "0.1.0",
+    "requires": [
+      "status",
+      "cue"
+    ],
+    "namespace": null,
+    "codeHash": "997eb04a51f1fec77ce2621b53ca0e3f0b32d31142def27d0cc98babb5586992",
+    "sourceFiles": [
+      "rules/legacy-0-9/next/common.js",
+      "rules/legacy-0-9/next/status-skills.js"
+    ],
+    "executionParameters": {},
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "projectDamage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 2,
+    "slot": 3,
+    "abilityId": "pudge_dismember",
+    "behaviorId": "legacy-0-9/remaining/pudge_dismember",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": "heros/legacy-0-9/pudge_dismember",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
+    "sourceFiles": [
+      "rules/legacy-0-9/remaining-channels.js",
+      "rules/legacy-0-9/remaining-common.js",
+      "rules/legacy-0-9/remaining-effects.js",
+      "rules/legacy-0-9/remaining-passives.js",
+      "rules/legacy-0-9/remaining-projectiles.js",
+      "rules/legacy-0-9/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 2,
       "slot": 3,
       "hostSemantics": "heros-host-events-1",
       "hostCapabilities": [
@@ -208,7 +521,7 @@
       "target-route"
     ],
     "namespace": "heros/legacy-0-9/axe_hunger",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -253,7 +566,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/axe_helix",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -276,7 +589,7 @@
     "stateSchema": {
       "id": "heros/legacy-0-9/helix-state",
       "version": "1.0.0",
-      "schemaHash": "1c3743d77ea4cb49c2eff3b6ebace0fd2254d65b891d6034e03e105e86fafe11",
+      "schemaHash": "47896b202527a40842bc9b7a1e555cd4d54ba668d8e9fde951edd6c861f901ce",
       "schema": {
         "anyOf": [
           {
@@ -338,7 +651,7 @@
           "rules/legacy-0-9/remaining-projectiles.js",
           "rules/legacy-0-9/remaining.js"
         ],
-        "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f"
+        "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6"
       }
     },
     "hooks": [
@@ -392,7 +705,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/sniper_shrapnel",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -499,7 +812,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/sniper_assassinate",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -543,7 +856,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/anti_mage_mana_break",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -565,7 +878,7 @@
     "stateSchema": {
       "id": "heros/legacy-0-9/mana-break-state",
       "version": "1.0.0",
-      "schemaHash": "b8434703ea22db6b8e64528a4f8c3446eacf641a0d4ab615a91bd78cc33b0b0b",
+      "schemaHash": "65c9cd6666e9f37dbf343bedf43a484e0b10266c12868dfc5d65129efb66be6d",
       "schema": {
         "anyOf": [
           {
@@ -632,7 +945,7 @@
           "rules/legacy-0-9/remaining-projectiles.js",
           "rules/legacy-0-9/remaining.js"
         ],
-        "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f"
+        "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6"
       }
     },
     "hooks": [
@@ -744,6 +1057,149 @@
     "scheduledBindings": null
   },
   {
+    "heroId": 6,
+    "slot": 0,
+    "abilityId": "phantom_assassin_dagger",
+    "behaviorId": "six-heroes/phantom_assassin_dagger",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 6,
+      "slot": 0
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 6,
+    "slot": 1,
+    "abilityId": "phantom_assassin_strike",
+    "behaviorId": "six-heroes/phantom_assassin_strike",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 6,
+      "slot": 1
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 6,
+    "slot": 2,
+    "abilityId": "phantom_assassin_immaterial",
+    "behaviorId": "legacy-0-9/phantom_assassin_immaterial",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "a40e8d69da471332a2e97f9430980c283dd1af669891cd33c7be6796944734fe",
+    "sourceFiles": [
+      "rules/legacy-0-9/projections.js"
+    ],
+    "executionParameters": {},
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "projectDamage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 6,
+    "slot": 3,
+    "abilityId": "phantom_assassin_coup",
+    "behaviorId": "legacy-0-9/remaining/phantom_assassin_coup",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": "heros/legacy-0-9/phantom_assassin_coup",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
+    "sourceFiles": [
+      "rules/legacy-0-9/remaining-channels.js",
+      "rules/legacy-0-9/remaining-common.js",
+      "rules/legacy-0-9/remaining-effects.js",
+      "rules/legacy-0-9/remaining-passives.js",
+      "rules/legacy-0-9/remaining-projectiles.js",
+      "rules/legacy-0-9/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 6,
+      "slot": 3,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-contact-v1",
+        "legacy-passive-v1",
+        "legacy-status-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "projectAttack"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
     "heroId": 7,
     "slot": 0,
     "abilityId": "drow_ranger_frost",
@@ -751,7 +1207,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/drow_ranger_frost",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -797,7 +1253,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/drow_ranger_gust",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -841,7 +1297,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/drow_ranger_multishot",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -917,7 +1373,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/lina_slave",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -997,7 +1453,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/lina_fiery",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -1079,7 +1535,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/lion_spike",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -1156,7 +1612,7 @@
     "revision": "1.0.0",
     "requires": [],
     "namespace": "heros/legacy-0-9/lion_drain",
-    "codeHash": "366181895965c9f741a69c6cfe2d7d28a259728a06869970236ab32f1dd54f7f",
+    "codeHash": "bb24ccee1000cd51562a3eef7b7df2bc9fb581246a553bc4344f127b1296cad6",
     "sourceFiles": [
       "rules/legacy-0-9/remaining-channels.js",
       "rules/legacy-0-9/remaining-common.js",
@@ -1228,6 +1684,317 @@
     },
     "hooks": [
       "activate"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 10,
+    "slot": 0,
+    "abilityId": "earthshaker_fissure",
+    "behaviorId": "six-heroes/earthshaker_fissure",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 10,
+      "slot": 0
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 10,
+    "slot": 1,
+    "abilityId": "earthshaker_totem",
+    "behaviorId": "six-heroes/earthshaker_totem",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 10,
+      "slot": 1
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 10,
+    "slot": 2,
+    "abilityId": "earthshaker_aftershock",
+    "behaviorId": "legacy-10-19/remaining/earthshaker_aftershock",
+    "revision": "1.0.0",
+    "requires": [
+      "damage"
+    ],
+    "namespace": "heros/legacy-10-19/earthshaker_aftershock",
+    "codeHash": "a0a9c0b0557b24e8d29b9e8abbc20dc25eb54d23d8f11784f565fa935e279fa4",
+    "sourceFiles": [
+      "rules/legacy-10-19/remaining-common.js",
+      "rules/legacy-10-19/remaining-effects.js",
+      "rules/legacy-10-19/remaining-passives.js",
+      "rules/legacy-10-19/remaining-projectiles.js",
+      "rules/legacy-10-19/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 10,
+      "slot": 2,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-hit-v1",
+        "legacy-passive-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 10,
+    "slot": 3,
+    "abilityId": "earthshaker_echo",
+    "behaviorId": "six-heroes/earthshaker_echo",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 10,
+      "slot": 3
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 14,
+    "slot": 0,
+    "abilityId": "windranger_shackle",
+    "behaviorId": "legacy-10-19/remaining/windranger_shackle",
+    "revision": "1.0.0",
+    "requires": [
+      "projectile-request",
+      "damage"
+    ],
+    "namespace": "heros/legacy-10-19/windranger_shackle",
+    "codeHash": "a0a9c0b0557b24e8d29b9e8abbc20dc25eb54d23d8f11784f565fa935e279fa4",
+    "sourceFiles": [
+      "rules/legacy-10-19/remaining-common.js",
+      "rules/legacy-10-19/remaining-effects.js",
+      "rules/legacy-10-19/remaining-passives.js",
+      "rules/legacy-10-19/remaining-projectiles.js",
+      "rules/legacy-10-19/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 14,
+      "slot": 0,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-hit-v1",
+        "legacy-linear-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onContact"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 14,
+    "slot": 1,
+    "abilityId": "windranger_powershot",
+    "behaviorId": "legacy-10-19/remaining/windranger_powershot",
+    "revision": "1.0.0",
+    "requires": [
+      "projectile-request",
+      "damage"
+    ],
+    "namespace": "heros/legacy-10-19/windranger_powershot",
+    "codeHash": "a0a9c0b0557b24e8d29b9e8abbc20dc25eb54d23d8f11784f565fa935e279fa4",
+    "sourceFiles": [
+      "rules/legacy-10-19/remaining-common.js",
+      "rules/legacy-10-19/remaining-effects.js",
+      "rules/legacy-10-19/remaining-passives.js",
+      "rules/legacy-10-19/remaining-projectiles.js",
+      "rules/legacy-10-19/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 14,
+      "slot": 1,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-hit-v1",
+        "legacy-linear-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onContact"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 14,
+    "slot": 2,
+    "abilityId": "windranger_windrun",
+    "behaviorId": "six-heroes/windranger_windrun",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 14,
+      "slot": 2
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 14,
+    "slot": 3,
+    "abilityId": "windranger_focus",
+    "behaviorId": "six-heroes/windranger_focus",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 14,
+      "slot": 3
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
     ],
     "scheduledHandlers": [],
     "scheduledBindings": null
@@ -1772,6 +2539,170 @@
     "hooks": [
       "planCast",
       "activate",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 19,
+    "slot": 0,
+    "abilityId": "tidehunter_gush",
+    "behaviorId": "legacy-10-19/remaining/tidehunter_gush",
+    "revision": "1.0.0",
+    "requires": [
+      "projectile-request",
+      "damage"
+    ],
+    "namespace": "heros/legacy-10-19/tidehunter_gush",
+    "codeHash": "a0a9c0b0557b24e8d29b9e8abbc20dc25eb54d23d8f11784f565fa935e279fa4",
+    "sourceFiles": [
+      "rules/legacy-10-19/remaining-common.js",
+      "rules/legacy-10-19/remaining-effects.js",
+      "rules/legacy-10-19/remaining-passives.js",
+      "rules/legacy-10-19/remaining-projectiles.js",
+      "rules/legacy-10-19/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 19,
+      "slot": 0,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-hit-v1",
+        "legacy-linear-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "onContact"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 19,
+    "slot": 1,
+    "abilityId": "tidehunter_shell",
+    "behaviorId": "legacy-10-19/remaining/tidehunter_shell",
+    "revision": "1.0.0",
+    "requires": [
+      "status"
+    ],
+    "namespace": "heros/legacy-10-19/tidehunter_shell",
+    "codeHash": "a0a9c0b0557b24e8d29b9e8abbc20dc25eb54d23d8f11784f565fa935e279fa4",
+    "sourceFiles": [
+      "rules/legacy-10-19/remaining-common.js",
+      "rules/legacy-10-19/remaining-effects.js",
+      "rules/legacy-10-19/remaining-passives.js",
+      "rules/legacy-10-19/remaining-projectiles.js",
+      "rules/legacy-10-19/remaining.js"
+    ],
+    "executionParameters": {
+      "heroId": 19,
+      "slot": 1,
+      "hostSemantics": "heros-host-events-1",
+      "hostCapabilities": [
+        "legacy-property-v1",
+        "legacy-shell-v1",
+        "legacy-status-v1"
+      ]
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "planCast",
+      "activate",
+      "projectDamage",
+      "onDamage",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 19,
+    "slot": 2,
+    "abilityId": "tidehunter_anchor",
+    "behaviorId": "six-heroes/tidehunter_anchor",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 19,
+      "slot": 2
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
+      "onStage"
+    ],
+    "scheduledHandlers": [],
+    "scheduledBindings": null
+  },
+  {
+    "heroId": 19,
+    "slot": 3,
+    "abilityId": "tidehunter_ravage",
+    "behaviorId": "six-heroes/tidehunter_ravage",
+    "revision": "1.0.0",
+    "requires": [],
+    "namespace": null,
+    "codeHash": "c5f9f5fca2b3c8f7afa8e965780c384b6ef2000fa44b22cd7346046223dddc6b",
+    "sourceFiles": [
+      "rules/six/index.js"
+    ],
+    "executionParameters": {
+      "heroId": 19,
+      "slot": 3
+    },
+    "stateSchema": {
+      "id": "heros/empty-state",
+      "version": "1.0.0",
+      "schemaHash": "baed2af5a7cd43d911d064a206f1c4c0d6f9da915cdc7f36f4eeeafe87b7ee80",
+      "schema": {
+        "type": "null"
+      },
+      "parameters": {},
+      "refinement": null
+    },
+    "hooks": [
+      "activate",
+      "onContact",
+      "onAttack",
       "onStage"
     ],
     "scheduledHandlers": [],
@@ -8920,10 +9851,10 @@
       "contactPadding": 22,
       "statusTick": 0.25,
       "groundHeight": 45,
-      "sprintTailFloor": 1e-08,
+      "sprintTailFloor": 1e-8,
       "reflectOffset": 40,
       "poisonTickLimit": 6,
-      "shieldEpsilon": 1e-08,
+      "shieldEpsilon": 1e-8,
       "innates": {
         "seaborn": {
           "armor": 5.4,
@@ -8989,10 +9920,10 @@
       "contactPadding": 22,
       "statusTick": 0.25,
       "groundHeight": 45,
-      "sprintTailFloor": 1e-08,
+      "sprintTailFloor": 1e-8,
       "reflectOffset": 40,
       "poisonTickLimit": 6,
-      "shieldEpsilon": 1e-08,
+      "shieldEpsilon": 1e-8,
       "innates": {
         "seaborn": {
           "armor": 5.4,
@@ -9120,10 +10051,10 @@
       "contactPadding": 22,
       "statusTick": 0.25,
       "groundHeight": 45,
-      "sprintTailFloor": 1e-08,
+      "sprintTailFloor": 1e-8,
       "reflectOffset": 40,
       "poisonTickLimit": 6,
-      "shieldEpsilon": 1e-08,
+      "shieldEpsilon": 1e-8,
       "innates": {
         "seaborn": {
           "armor": 5.4,

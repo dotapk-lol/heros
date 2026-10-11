@@ -11,7 +11,7 @@ npm install github:dotapk-lol/heros#main
 
 | 导出 | 用途 |
 | --- | --- |
-| `@dotapk/heros` | 默认22/88组合、已发英雄/profile/选择器及共享session/schema API |
+| `@dotapk/heros` | 默认28/112组合、已发英雄/profile/选择器及共享session/schema API |
 | `@dotapk/heros/sdk` | 不变的底层SDK，46定义和原有三个默认实现初始化 |
 | `@dotapk/heros/content` | 固定46定义目录，不是可玩名单 |
 | `@dotapk/heros/catalog` | 全127身份的已发/暂停状态 |
@@ -23,7 +23,7 @@ npm install github:dotapk-lol/heros#main
 ```js
 import { createHeroRegistry, createRuleSession, heroes } from '@dotapk/heros';
 const sealed = createHeroRegistry().seal();
-console.log(heroes.length, sealed.manifest.length); //22,88
+console.log(heroes.length, sealed.manifest.length); //28,112
 const session = createRuleSession(sealed);
 // host = {now(),actor(id),random(),ports}; 具体合约见 host-adapter.zh-CN.md。
 ```
@@ -35,7 +35,7 @@ import { createHeroRegistry } from '@dotapk/heros/sdk';
 const empty = createHeroRegistry(undefined, { defaults: false });
 ```
 
-底层SDK仍固定46身份/recipe约束，修改数值定义须保留全目录，不能只传过滤出的22。
+底层SDK仍固定46身份/recipe约束，修改数值定义须保留全目录，不能只传过滤出的28。
 
 源码checkout运行 `npm run build`、`npm test`、`npm run example`。原始Lantern示例请求Spark15魔法伤害、Echo3纯伤、Mend12治疗及.25/.5秒各2治疗，再请求驱散/负面免疫。固定RNG recorder同时恢复有限host与规则checkpoint，比较完整继续轨迹，不支付施法或模拟保护。
 

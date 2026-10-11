@@ -23,7 +23,7 @@ For prose-only documentation changes check links, paths and `git diff --check`; 
 - [ ] Clock, interruption/death, status effectiveness and terminal ordering are documented where affected.
 - [ ] Focused tests cover the changed effect and meaningful rejection/restore cases; exact commands and runtime are recorded.
 - [ ] Generated fingerprint and artifact file list are reviewed; no unrelated rule, schema or default registration changes.
-- [ ] Definition/candidate/registered/host-accepted status is reported separately; only the released22/88 is default-enabled; no claim that all184 definitions are connected.
+- [ ] Definition/candidate/registered/host-accepted status is reported separately; only the released28/112 is default-enabled; no claim that all184 definitions are connected.
 - [ ] No private implementation/path, secrets, Valve media or copied descriptive text is included.
 - [ ] README/docs/example links and any public packaging changes are reviewed; version and exact assembly are recorded; paused heroes are not enabled by a status-only edit.
 

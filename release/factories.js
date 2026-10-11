@@ -1,3 +1,4 @@
+import {sixFactory} from '../rules/six/index.js';
 // Public composition of reviewed rule factories. No game host or private dispatcher.
 import {BATTLE_ABI} from '../index.js';
 import {legacyThreeFactories} from '../rules/legacy-three.js';
@@ -15,6 +16,7 @@ import {legacyActiveDraftFactory} from '../rules/legacy-0-9/next/active-skills.j
 import {legacyStatusDraftFactory} from '../rules/legacy-0-9/next/status-skills.js';
 export function releasedFactory(row) {
  const {heroId:h,slot:s,behaviorId:id,executionParameters:p}=row;
+ if(id.startsWith('six-heroes/'))return sixFactory(h,s);
  if(id.startsWith('heros/a/extension-dispatch/')) return extensionCanonicalFactory;
  if(id.startsWith('heros/a/v8/')) return {abiVersion:BATTLE_ABI,parameters:p,create:createRule};
  if(id.startsWith('b-v6/')) return {abiVersion:BATTLE_ABI,parameters:p,create:createBRule};
